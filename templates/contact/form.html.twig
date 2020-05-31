@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+{% block title %}Contactez-moi
+{% endblock %}
+{% block javascripts %}
+	<script src="https://www.google.com/recaptcha/api.js?hl=fr" async defer></script>
+	<script>
+		function onSubmit(token) {
+document.getElementById("contact-form").submit();
+}
+	</script>
+{% endblock %}
+{% block pageTitle %}
+	<h1 class="form-title">Contactez-moi</h1>
+	<h2 class="small-text">Je reviendrais vers vous au plus vite
+		<i class="fas fa-running"></i>
+	</h2>
+{% endblock %}
+{% block body %}
+
+	{{ form_start(form, {'attr': {'id': 'contact-form'}})}}
+	{{ form_row(form.nom, {'attr': {'class': 'form-field'}}) }}
+	{{ form_row(form.email, {'attr': {'class': 'form-field'}}) }}
+	{{ form_row(form.sujet, {'attr': {'class': 'form-field'}}) }}
+	{{ form_row(form.message, {'attr': {'class': 'form-field'}}) }}
+
+	<hr>
+	{{ form_row(form.envoyer, {'attr': {'class': 'form-button g-recaptcha', 'data-sitekey': google_recaptcha_site_key, 'data-callback': 'onSubmit' }}) }}
+
+	{{ form_end(form) }}
+{% endblock %}

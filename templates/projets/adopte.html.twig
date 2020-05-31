@@ -1,0 +1,35 @@
+{% extends "base.html.twig" %}
+{% block title %}
+	Projet Adopte Une Serie
+{% endblock %}
+{% block pageTitle %}
+	<h1>Projet Adopte une série</h1>
+	<p class="small-text">HTML, CSS, Responsive Desing, Symfony, React/Redux</p>
+{% endblock %}
+{% block body %}
+	<div class="project-container">
+		<img src="/../asset/image/adopteuneserie_screen.png">
+		<h2>Ce site est le résultat de 4 développeurs et d'un mois de travail dans le cadre de notre projet de fin de formation de l'école O'Clock.</h2>
+		<a class="project-button-link" href="http://209.182.238.244" target="_blank">
+			<button class="btn btn-info">Voir le site<img src="https://img.icons8.com/metro/26/000000/external-link.png"/></button>
+		</a>
+		<p class="small-text">(Ce projet a été présenté lors d'un live sur Twitch dont la rediffusion est disponible
+			<a href="https://youtu.be/Yfm2-PH8iTU?t=305" target="_blank">ici<img src="https://img.icons8.com/metro/26/000000/external-link.png"/></a>)
+		</p>
+		<p>Adopte une série permet d'obtenir des suggestions de séries télévisées en fonction d'un certain nombre de critères comme la durée, le genre ou encore la note reçue.</p>
+		<h3>Techno utilisées :
+		</h3>
+		<p>- Symfony (pour la partie back-end et partie administration base de données)
+			<br>- React/Redux pour la partie front-end.</p>
+
+
+		<h3>L'organisation</h3>
+		<p>Ce projet a été créé en suivant la méthode Scrum. J'ai eu l'opportunité en tant que développeur Symfony d'avoir les rôles de scrum master, lead dev back et référent Symfony.
+			<br>Utilisation de trello pour la gestion des tâches, de GitHub pour le travail en équipe et de Slack et Discord pour la communication.</p>
+		<h3>La technique</h3>
+		<p>La partie Symfony a été développée sous forme de petite API qui consomme l'API
+			<a href="https://www.themoviedb.org/documentation/api" target="_blank">The Movie DB<img src="https://img.icons8.com/metro/26/000000/external-link.png"/></a>
+			pour hydrater notre base de données, de l'envoie des séries correspondants aux critères séléctionnés pas l'utilisateur, du traitement/de lasécurité des formulaires et de la gestion utilisateurs. Notre API renvoie toutes les informations nécéssaires au front-end en JSON grace aux différents endpoint.
+		</p>
+	</div>
+{% endblock %}

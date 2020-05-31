@@ -1,0 +1,22 @@
+{% set current_path = app.request.get('_route') %}
+<div class="mobile-tabs">
+	<a href="{{ path('about') }}" class="mobile-tabs-item 
+	{% if current_path is same as ("about") %}
+		active-tabs
+	{% endif %}">
+		<i class="far fa-address-card"></i>A propos
+	</a>
+	<a href="{{ path('projets') }}" class="mobile-tabs-item
+	{% if current_path is same as ("projets") %}
+		active-tabs
+	{% endif %}">
+		<i class="fas fa-code"></i>Portfolio
+	</a>
+	<a href="{{ path('contact') }}" class="mobile-tabs-item
+	{% if current_path is same as ("contact") %}
+		active-tabs
+	{% endif %}">
+		<i class="fas fa-feather-alt"></i>Contact
+	</a>
+
+</div>

@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+{% block title %}
+	Mes projets
+{% endblock %}
+{% block pageTitle %}
+	<h1>Portfolio</h1>
+	<h2 class="small-text">Voici les différents projets sur lesquels j'ai pu travailler, en équipe ou en solitaire :</h2>
+{% endblock %}
+{% block body %}
+	<div class="projects-container">
+		<ul>
+			<li><a href="{{ path('projet_moodswing') }}" class="projet-lien" style="background-color: #F4BFD3;"><img src="/../asset/image/moodswingvintage.png"><h3>Site vitrine d'une boutique vintage en ligne : Moodswing Vintage</h3></a></li>
+			<li><a href="{{ path('projet_adopte') }}" class="projet-lien" style="background-color: #2F353A;"><img src="/../asset/image/adopteuneserielogo.png"><h3>Projet de fin de formation : Adopte une série</h3></a></li>
+			<li><a href="{{ path('projet_portfolio') }}" class="projet-lien" style="background-color: #A4B8C4;"><img src="/../asset/image/portfolio.png"><h3>Portfolio personnel</h3></a></li>
+		</ul>
+	</div>
+
+{% endblock %}
+{% block bottomLink %}
+	<div class="link-bottom">
+		<a href="{{ path('about') }}">A propos de moi
+			<i class="fas fa-angle-double-right"></i>
+		</a>
+	</div>
+{% endblock %}

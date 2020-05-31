@@ -1,0 +1,35 @@
+{% extends "base.html.twig" %}
+{% block title %}
+	Projet Moodswing vintage
+{% endblock %}
+{% block pageTitle %}
+	<h1>Moodswing Vintage</h1>
+	<p class="small-text">HTML, CSS, Responsive Desing, Symfony, Javascript, SEO, AdminSYS</p>
+{% endblock %}
+{% block body %}
+	<div class="project-container">
+		<img src="/../asset/image/moodswingvintage_screen.png">
+		<h2>Site réalisé dans le but d'augmenter la visibilité d'une boutique Etsy</h2>
+		<div class="git-site-btn">
+			<a class="project-button-link" href="https://moodswingvintage.com" target="_blank">
+				<button class="btn btn-info">Voir le site<img src="https://img.icons8.com/metro/26/000000/external-link.png"/></button>
+			</a>
+			<a class="project-button-link" href="https://github.com/NicolasHalberstadt/Moodswing-Vintage" target="_blank">
+				<button class="btn btn-success">Voir le repo GitHub<img src="https://img.icons8.com/metro/26/000000/external-link.png"/></button>
+			</a>
+		</div>
+		<p>Moodswingvintage.com permet de voir les produits vendus sur le canal de vente Etsy et de se créer un compte afin de mettre les produits en favoris. Les administrateurs ont également la possibilité de mettre le catalogue à jour ou de modifier/supprimer des entrées dans la base de données.
+			<br>Ce site n'est pas un canal de vente puisqu'il a été créé dans le but premier d'augmenter le traffic sur le canal de vente Etsy.</p>
+		<h3>Techno utilisées :
+		</h3>
+		<p>- Symfony full-stack
+			<br>- Quelques scripts Javascript pour l'UX.</p>
+
+
+		<h3>L'organisation</h3>
+		<p>Ce projet a été réalisé par moi même avec l'aide de la propriétaire de la boutique, le product owner.
+			<br>Utilisation de trello pour la gestion des tâches.</p>
+		<h3>La technique</h3>
+		<p>Les produits sont récupérés à partir de la consommation de l'API du site d'Etsy puis sont ajoutés à la base de données sous forme d'entités, ce qui permet de gérer leur mise en favoris par les utilisateurs. L'API permet également de supprimer un article de la base de données si il n'est plus en vente. Une partie SEO a été mise en place afin d'augmenter la visibilité de la boutique et la partie admin SYS a également été gérée pour la configuration de l'hébergement du site.</p>
+	</div>
+{% endblock %}

@@ -1,0 +1,104 @@
+{% extends "base.html.twig" %}
+{% block title %}A propos de moi
+{% endblock %}
+
+{% block pageTitle %}
+
+	<h1>A propos de moi</h1>
+	<h2 class="small-text">(Je n'aurais bientôt plus de secrets pour vous)</h2>
+
+{% endblock %}
+
+{% block body %}
+	<div class="about-container">
+		<h2>Qui suis-je?</h2>
+		<p>Je m'appelle Nicolas Halberstadt, j'ai 22 ans, j'habite à Aix-en-Provence et je suis développeur web et web mobile, spécialisé en Symfony. Je suis passioné par les nouvelles technologies et le sport, j'adore voyager, découvir de nouveaux univers et coder (bien évidemment)!
+		</p>
+		<h2>Mon parcours</h2>
+		<p>Après avoir cherché ma voie pendant quelques années à la suite de mon baccalauréat et ayant toujours été attiré par le monde du numérique, je me suis mis à la recherche d'une formation dans ce domaine. J'ai finis par tomber sur l'école O'Clock, Certifiée Grand école du Numérique, moderne, dynamique et jeune, pour apprendre le développement, plus particulièrement le développement web.
+			<a href="#laFormation">5 mois intensif</a>
+			à apprendre le code sous (presque) toutes ses coutures afin de devenir développeur web et de nous donner les
+			<a href="#skills">outils</a>
+			pour continuer à apprendre. Aujourd'hui, je suis toujours en apprentissage/perfectionnement en autodidacte au travers de différents projets et je suis à la recherche d'une opportunité dans les Boûches-du-Rhone, plus précisemment dans la région d'Aix-Marseille.
+		</p>
+		<img src="/../asset/image/map.png" class="about-map" alt="carte région Aix-Marseille">
+		<h2>
+			<a name="laFormation">Ma formation</a>
+		</h2>
+		<p>
+			La formation de l'école
+			<a href="https://oclock.io" target="_blank">O'Clock<img src="https://img.icons8.com/metro/26/000000/external-link.png"/></a>
+			de 5 mois (735h), aussi labellisée « Grande École du Numérique », se décompose de la sorte :</p>
+		<h3>- Le Socle (3 mois) :</h3>
+		<p>
+			Apporte les bases du développement avec les technologies HTML5, CSS3, JavaScript, PHP et MySQL mais également la découverte de Git, de Bootstrap et de quelques notions d'Adminsys.
+		</p>
+		<h3>- La Spécialisation (1 mois, sur Symfony):</h3>
+		<ul class="p">
+			<li>Approfondissement des modèles et de la conception de base de données. Découverte du concept d’ORM via l'utilisation de Doctrine, ainsi que les fixtures et custom queries.</li>
+			<li>Gestion des comptes utilisateurs, des formulaires, de l’authentification et de la sécurité.</li>
+			<li>Apprentissage d'automatisation des tests sur notre code, de gestion de l’environnement de développement et de production, de création des API ou encore d'internationalisation d'une application.</li>
+		</ul>
+
+		<h3>- L'Apothéose (1 mois):</h3>
+		<p>Projet de fin de formation permettant de mettre en pratique toutes les connaissances acquises pour l'élaboration d'un projet professionnel.
+		</p>
+		<h3>- Opquast</h3>
+		<p>A la fin de ma formation (mars 2020) j'ai décidé de passer la certification 'Maitrise de la qualité en projet web' délivrée par l'organisme Opquast. J'ai obtenu un score de 840/1000 ce qui me place à l'échellon 'Avancé'. Le certificat est consultable
+			<a href="https://directory.opquast.com/fr/certificat/80KP7Y/" target="_blank">ici<img src="https://img.icons8.com/metro/26/000000/external-link.png"/></a>
+		</p>
+		<h2>
+			<a name="skills">Mes connaissances</a>
+		</h2>
+		<p class="skills-list">Au fil de ma formation ainsi que de mon travail sur mes projets personnels, j'ai acquis de nombreuses compétences :</p>
+		<ul>
+			<li>
+				<i class="fab fa-symfony"></i>
+				Symfony 4/5
+			</li>
+			<li>
+				<i class="fab fa-html5"></i>
+				HTML 5
+			</li>
+			<li>
+				<i class="fab fa-css3-alt"></i>
+				CSS 3
+			</li>
+			<li>
+				<i class="fab fa-bootstrap"></i>
+				Bootstrap
+			</li>
+			<li>
+				<i class="fab fa-php"></i>
+				PHP
+			</li>
+			<li>
+				<i class="fab fa-js"></i>
+				javaScript
+			</li>
+			<li><img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/>JQuery</li>
+			<li>
+				<i class="fab fa-apple"></i>Apple
+			</li>
+			<li>
+				<i class="fab fa-ubuntu"></i>Ubuntu
+			</li>
+
+			<li>
+				<i class="fab fa-github"></i>GitHub
+			</li>
+			<li>
+				<i class="fas fa-database"></i>MySql
+			</li>
+		</ul>
+
+
+	</div>
+{% endblock %}
+{% block bottomLink %}
+	<div class="link-bottom">
+		<a href="{{ ('projets') }}">Voir mes projets
+			<i class="fas fa-angle-double-right"></i>
+		</a>
+	</div>
+{% endblock %}
