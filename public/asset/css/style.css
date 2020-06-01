@@ -519,10 +519,10 @@ label.required:after {
     }
     h1 {
         margin-top: -5px;
-        font-size: 30px;
+        font-size: 40px;
     }
     h2 {
-        font-size: 40px;
+        font-size: 30px;
         margin: 1em 0 0.5em 0;
     }
     h3,
@@ -677,8 +677,11 @@ label.required:after {
 }
 
 @media (min-width: 575px) and (max-width: 700px) {
+    .content-wrap {
+        padding: 2em;
+    }
     h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
     h2 {
         font-size: 50px;
@@ -696,24 +699,20 @@ label.required:after {
     /* HEADER */
     .header-profile-pic {
         border-radius: 200px;
-        height: 300px;
-        width: 300px;
+        height: 100px;
+        width: 100px;
     }
     .header-profile-txt h2 {
-        font-size: 50px;
+        font-size: 40px;
     }
     .header-profile-txt h3 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .header-nav {
         display: none;
     }
     /* ABOUT */
     .small-text {
-        font-size: 35px;
-    }
-    .about-container p,
-    .p {
         font-size: 25px;
     }
     .about-container a>img {
@@ -738,6 +737,17 @@ label.required:after {
         margin-top: 0;
         height: 50%;
         width: 50%;
+    }
+    /* ALL PROJECTS */
+    .projects-container>ul>li {
+        width: 100%;
+        padding: unset;
+        margin-bottom: unset;
+        margin: 1em auto;
+    }
+    .projects-container>ul>li:first-of-type {
+        margin: 4em auto;
+        margin-bottom: 1em;
     }
     /* PROJECTS DETAILS */
     .project-container>img {
@@ -771,6 +781,19 @@ label.required:after {
     .mobile-tabs-item {
         font-size: 20px;
         padding: 1em;
+    }
+    /* BOTTOM LINK */
+    .link-bottom {
+        margin: 2em -1em 0em -1em;
+    }
+    /* FOOTER */
+    .footer {
+        margin: 0 -15px;
+        padding: 0;
+        padding-top: 2em;
+    }
+    .links ul {
+        padding: 0;
     }
 }
 
