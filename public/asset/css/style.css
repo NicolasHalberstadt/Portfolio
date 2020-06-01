@@ -694,9 +694,6 @@ label.required:after {
     .links ul {
         padding: 0;
     }
-    .made-with-love p {
-        font-size: 35px;
-    }
 }
 
 @media (min-width: 575px) and (max-width: 700px) {
@@ -814,9 +811,6 @@ label.required:after {
     .mobile-tabs-item {
         font-size: 20px;
         padding: 1em;
-    }
-    .made-with-love p {
-        font-size: 35px;
     }
 }
 
@@ -999,7 +993,6 @@ label.required:after {
         margin-right: 1em;
     }
     .made-with-love p {
-        font-size: 35px;
         margin-bottom: 30px;
     }
 }
