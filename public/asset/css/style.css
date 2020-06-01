@@ -404,7 +404,7 @@ form {
     padding-top: 1em;
 }
 
-label.required:before {
+label.required:after {
     content: "* ";
     color: rgb(209, 52, 52);
 }
@@ -543,6 +543,25 @@ label.required:before {
         font-size: 20px!important;
         margin-bottom: 0.5em;
     }
+    /* HOMEPAGE */
+    .homepage-img-container {
+        margin-bottom: 2em;
+    }
+    .homepage-img-container img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        border-radius: 200px;
+    }
+    .homepage-txt {
+        width: 80%;
+    }
+    .homepage-txt h1 {
+        font-size: 50px;
+    }
+    .homepage-txt h2 {
+        font-size: 40px;
+    }
     /* HEADER */
     .header-profile {
         margin: auto;
@@ -601,7 +620,6 @@ label.required:before {
     .projet-lien h3 {
         font-size: 15px;
     }
-    /* PROJECTS DETAILS */
     .projects-container>ul>li {
         width: 100%;
         padding: unset;
@@ -612,6 +630,7 @@ label.required:before {
         margin: 4em auto;
         margin-bottom: 1em;
     }
+    /* PROJECTS DETAILS */
     .project-container>img {
         padding-top: 2em;
         width: 100%;
@@ -627,9 +646,33 @@ label.required:before {
     .projects-container div:last-of-type {
         margin: 2em -5em 2em -6em;
     }
-    /* CONTACT */
+    .project-container button {
+        font-size: 40px;
+        display: block;
+        margin: auto;
+        padding: 0.5em;
+        margin-bottom: 2em;
+    }
+    .project-container h2 {
+        padding-bottom: 1em;
+        font-size: 40px;
+    }
+    /* FORM */
     form {
-        width: 75%;
+        font-size: 50px;
+        -webkit-box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
+        -moz-box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
+        box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
+        padding: 1em;
+        width: 80%;
+        border-radius: 15px;
+        margin: 2em auto;
+    }
+    .form-control {
+        font-size: 40px;
+    }
+    #contact_envoyer {
+        font-size: 45px;
     }
     /* BOTTOM LINK */
     .link-bottom {
@@ -643,6 +686,7 @@ label.required:before {
         font-size: 20px;
         padding: 0.5em;
     }
+    /* FOOTER */
     .footer {
         margin: 0 -15px;
         padding: 0;
@@ -650,6 +694,9 @@ label.required:before {
     }
     .links ul {
         padding: 0;
+    }
+    .made-with-love p {
+        font-size: 35px;
     }
 }
 
@@ -662,6 +709,25 @@ label.required:before {
     }
     h3 {
         font-size: 40px
+    }
+    /* HOMEPAGE */
+    .homepage-img-container {
+        margin-bottom: 2em;
+    }
+    .homepage-img-container img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        border-radius: 200px;
+    }
+    .homepage-txt {
+        width: 80%;
+    }
+    .homepage-txt h1 {
+        font-size: 50px;
+    }
+    .homepage-txt h2 {
+        font-size: 40px;
     }
     /* HEADER */
     .header-profile-pic {
@@ -715,6 +781,34 @@ label.required:before {
         width: 100%;
         height: 100%;
     }
+    .project-container button {
+        font-size: 40px;
+        display: block;
+        margin: auto;
+        padding: 0.5em;
+        margin-bottom: 2em;
+    }
+    .project-container h2 {
+        padding-bottom: 1em;
+        font-size: 40px;
+    }
+    /* FORM */
+    form {
+        font-size: 50px;
+        -webkit-box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
+        -moz-box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
+        box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
+        padding: 1em;
+        width: 80%;
+        border-radius: 15px;
+        margin: 2em auto;
+    }
+    .form-control {
+        font-size: 40px;
+    }
+    #contact_envoyer {
+        font-size: 45px;
+    }
     /* MOBILE TABS */
     .mobile-tabs {
         display: flex;
@@ -723,9 +817,16 @@ label.required:before {
         font-size: 20px;
         padding: 1em;
     }
+    .made-with-love p {
+        font-size: 35px;
+    }
 }
 
 @media (min-width: 701px) and (max-width: 991.98px) {
+    .content-wrap {
+        padding: 2em;
+        min-height: calc(100vh - 464px - 756px);
+    }
     h1 {
         font-size: 80px;
     }
@@ -743,6 +844,32 @@ label.required:before {
     .p {
         font-size: 45px;
     }
+    .small-text {
+        font-size: 35px;
+    }
+    /* HOMEPAGE */
+    .homepage-img-container {
+        margin-bottom: 2em;
+    }
+    .homepage-img-container img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        border-radius: 200px;
+    }
+    .homepage-txt {
+        width: 80%;
+    }
+    .homepage-txt h1 {
+        font-size: 50px;
+    }
+    .homepage-txt h2 {
+        font-size: 40px;
+    }
+    /* HEADER */
+    .header {
+        padding: 1em;
+    }
     .header-profile-pic {
         height: 400px;
         width: 400px;
@@ -751,7 +878,7 @@ label.required:before {
         font-size: 60px;
     }
     .header-profile-txt h3 {
-        font-size: 50px;
+        font-size: 35px;
     }
     .header-nav {
         display: none;
@@ -783,11 +910,24 @@ label.required:before {
         width: 100px;
     }
     /* ALL PROJECTS */
+    .projects-container h1 {
+        padding: 1em;
+    }
     .projet-lien {
-        height: 600px
+        height: 400px;
     }
     .projet-lien h3 {
-        font-size: 40px;
+        font-size: 35px;
+    }
+    .projects-container>ul>li {
+        width: 80%;
+        padding: unset;
+        margin-bottom: unset;
+        margin: 2em auto;
+    }
+    .projects-container>ul>li:first-of-type {
+        margin: 4em auto;
+        margin-bottom: 1em;
     }
     /* PROJECTS DETAILS */
     .project-container {
@@ -799,18 +939,40 @@ label.required:before {
         height: 100%;
     }
     .project-container button {
-        font-size: 35px;
+        font-size: 40px;
         display: block;
         margin: auto;
         padding: 0.5em;
-        width: 50%;
         margin-bottom: 2em;
     }
     .project-container h2 {
         padding-bottom: 1em;
+        font-size: 40px;
     }
     .project-container h3 {
         padding: 1em 0;
+    }
+    /* FORM */
+    form {
+        font-size: 50px;
+        -webkit-box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
+        -moz-box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
+        box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
+        padding: 1em;
+        width: 80%;
+        border-radius: 15px;
+        margin: 2em auto;
+    }
+    .form-control {
+        font-size: 40px;
+    }
+    #contact_envoyer {
+        font-size: 45px;
+    }
+    /* LINK BOTTOM */
+    .link-bottom {
+        font-size: 45px;
+        margin: 2em -15px 0em -15px;
     }
     /* MOBILE-TABS */
     .mobile-tabs {
@@ -820,6 +982,28 @@ label.required:before {
         font-size: 40px;
         padding: 1em;
         padding-bottom: 1.5em;
+    }
+    /* FOOTER */
+    .footer {
+        margin: 0 -15px;
+        padding: 0;
+        padding-top: 2em;
+    }
+    .links ul {
+        padding: 0;
+    }
+    .links li {
+        font-size: 50px;
+    }
+    .links li>p {
+        font-size: 40px;
+    }
+    .links i {
+        margin-right: 1em;
+    }
+    .made-with-love p {
+        font-size: 35px;
+        margin-bottom: 30px;
     }
 }
 
