@@ -547,20 +547,8 @@ label.required:after {
     .homepage-img-container {
         margin-bottom: 2em;
     }
-    .homepage-img-container img {
-        display: block;
-        margin: auto;
-        width: 100%;
-        border-radius: 200px;
-    }
     .homepage-txt {
         width: 80%;
-    }
-    .homepage-txt h1 {
-        font-size: 50px;
-    }
-    .homepage-txt h2 {
-        font-size: 40px;
     }
     /* HEADER */
     .header-profile {
@@ -710,20 +698,8 @@ label.required:after {
     .homepage-img-container {
         margin-bottom: 2em;
     }
-    .homepage-img-container img {
-        display: block;
-        margin: auto;
-        width: 100%;
-        border-radius: 200px;
-    }
     .homepage-txt {
         width: 80%;
-    }
-    .homepage-txt h1 {
-        font-size: 50px;
-    }
-    .homepage-txt h2 {
-        font-size: 40px;
     }
     /* HEADER */
     .header-profile-pic {
@@ -843,20 +819,8 @@ label.required:after {
     .homepage-img-container {
         margin-bottom: 2em;
     }
-    .homepage-img-container img {
-        display: block;
-        margin: auto;
-        width: 100%;
-        border-radius: 200px;
-    }
     .homepage-txt {
         width: 80%;
-    }
-    .homepage-txt h1 {
-        font-size: 50px;
-    }
-    .homepage-txt h2 {
-        font-size: 40px;
     }
     /* HEADER */
     .header {
