@@ -646,7 +646,6 @@ label.required:after {
     }
     /* FORM */
     form {
-        font-size: 50px;
         -webkit-box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
         -moz-box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
         box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
@@ -654,12 +653,6 @@ label.required:after {
         width: 80%;
         border-radius: 15px;
         margin: 2em auto;
-    }
-    .form-control {
-        font-size: 40px;
-    }
-    #contact_envoyer {
-        font-size: 45px;
     }
     /* BOTTOM LINK */
     .link-bottom {
@@ -765,7 +758,6 @@ label.required:after {
     }
     /* FORM */
     form {
-        font-size: 50px;
         -webkit-box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
         -moz-box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
         box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
@@ -773,12 +765,6 @@ label.required:after {
         width: 80%;
         border-radius: 15px;
         margin: 2em auto;
-    }
-    .form-control {
-        font-size: 40px;
-    }
-    #contact_envoyer {
-        font-size: 45px;
     }
     /* MOBILE TABS */
     .mobile-tabs {
@@ -909,7 +895,6 @@ label.required:after {
     }
     /* FORM */
     form {
-        font-size: 50px;
         -webkit-box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
         -moz-box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
         box-shadow: 0px 0px 66px 12px rgba(175, 217, 198, 0.64);
@@ -917,12 +902,6 @@ label.required:after {
         width: 80%;
         border-radius: 15px;
         margin: 2em auto;
-    }
-    .form-control {
-        font-size: 40px;
-    }
-    #contact_envoyer {
-        font-size: 45px;
     }
     /* LINK BOTTOM */
     .link-bottom {
