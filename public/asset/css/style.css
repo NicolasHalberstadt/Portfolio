@@ -14,7 +14,7 @@ body {
 
 .content-wrap {
   min-height: calc(100vh - 445px - 506px);
-  padding: 2em 10em 10em;
+  padding: 2em 5em 5em;
 }
 
 h1 {
