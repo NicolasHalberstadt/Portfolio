@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 .content-wrap {
@@ -63,7 +63,6 @@ p,
   font-size: 20px;
 }
 
-
 /* HOMEPAGE */
 
 .homepage {
@@ -106,10 +105,10 @@ p,
 }
 
 .tracking-in-expand {
-  -webkit-animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-  animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
-
 
 /* HEADER */
 
@@ -205,7 +204,11 @@ p,
   background-color: #c49991;
   margin: 2em -1em 1.2em -1em;
   color: white;
-  transition: 0.3s
+  transition: 0.3s;
+}
+
+.link-bottom:hover {
+  background-color: rgb(134, 106, 101);
 }
 
 .link-bottom a {
@@ -213,12 +216,40 @@ p,
   color: white;
   width: 100%;
   padding: 1em;
+  position: relative;
 }
 
-.link-bottom:hover {
-  background-color: rgb(134, 106, 101);
+@keyframes moving-arrows {
+  from {
+  }
+  to {
+    margin-left: 40px;
+  }
 }
 
+@-webkit-keyframes moving-arrows {
+  from {
+  }
+  to {
+    margin-left: 40px;
+  }
+}
+
+.fa-angle-double-right {
+  position: absolute;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.link-bottom:hover a .fa-angle-double-right {
+  animation-duration: 2s;
+  animation-name: moving-arrows;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  --webkit-animation-name: moving-arrows;
+  --webkit-animation-fill-mode: forwards;
+  --webkit-animation-iteration-count: infinite;
+}
 
 /* ABOUT */
 
@@ -279,7 +310,6 @@ p,
   font-size: 45px;
   width: 45px;
 }
-
 
 /* ALL PROJECTS */
 
@@ -441,7 +471,7 @@ label.required:after {
   flex-direction: column;
   text-align: center;
   width: 33.33%;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .mobile-tabs-item:hover {
@@ -502,6 +532,64 @@ label.required:after {
   color: red;
 }
 
+@-webkit-keyframes pulse {
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+@keyframes pulse {
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+.fa-heart {
+  animation: pulse 2s infinite backwards;
+}
+
 /*  ##################### MEDIA ######################  */
 
 @media (max-width: 575px) {
@@ -512,33 +600,27 @@ label.required:after {
 
   h1 {
     margin-top: -5px;
-    font-size: 40px;
   }
 
   h2 {
-    font-size: 30px;
     margin: 1em 0 0.5em 0;
   }
 
   h3,
   .h3 {
-    font-size: 35px;
     padding-bottom: 1em;
   }
 
   h4 {
-    font-size: 25px;
     font-weight: 600;
   }
 
   p,
   .p {
-    font-size: 20px;
     margin-bottom: 2em;
   }
 
   .small-text {
-    font-size: 20px !important;
     margin-bottom: 0.5em;
   }
 
@@ -567,14 +649,6 @@ label.required:after {
     width: 100px;
   }
 
-  .header-profile-txt h2 {
-    font-size: 30px;
-  }
-
-  .header-profile-txt h3 {
-    font-size: 15px;
-  }
-
   .header-nav {
     display: none;
   }
@@ -598,13 +672,11 @@ label.required:after {
   }
 
   .about-container ul > li {
-    font-size: 20px;
     margin-bottom: 0.5em;
   }
 
   .about-container ul:last-of-type > li > i,
   .about-container ul:last-of-type > li > img {
-    font-size: 40px;
     width: 40px;
   }
 
@@ -622,7 +694,6 @@ label.required:after {
   }
 
   .projet-lien h3 {
-    font-size: 15px;
   }
 
   .projects-container > ul > li {
@@ -687,7 +758,6 @@ label.required:after {
   }
 
   .mobile-tabs-item {
-    font-size: 20px;
     padding: 0.5em;
   }
 
@@ -710,33 +780,27 @@ label.required:after {
 
   h1 {
     margin-top: -5px;
-    font-size: 40px;
   }
 
   h2 {
-    font-size: 30px;
     margin: 1em 0 0.5em 0;
   }
 
   h3,
   .h3 {
-    font-size: 35px;
     padding-bottom: 1em;
   }
 
   h4 {
-    font-size: 25px;
     font-weight: 600;
   }
 
   p,
   .p {
-    font-size: 20px;
     margin-bottom: 2em;
   }
 
   .small-text {
-    font-size: 20px !important;
     margin-bottom: 0.5em;
   }
 
@@ -765,14 +829,6 @@ label.required:after {
     width: 100px;
   }
 
-  .header-profile-txt h2 {
-    font-size: 30px;
-  }
-
-  .header-profile-txt h3 {
-    font-size: 15px;
-  }
-
   .header-nav {
     display: none;
   }
@@ -796,13 +852,11 @@ label.required:after {
   }
 
   .about-container ul > li {
-    font-size: 20px;
     margin-bottom: 0.5em;
   }
 
   .about-container ul:last-of-type > li > i,
   .about-container ul:last-of-type > li > img {
-    font-size: 40px;
     width: 40px;
   }
 
@@ -817,10 +871,6 @@ label.required:after {
 
   .projet-lien {
     height: 200px;
-  }
-
-  .projet-lien h3 {
-    font-size: 15px;
   }
 
   .projects-container > ul > li {
@@ -885,7 +935,6 @@ label.required:after {
   }
 
   .mobile-tabs-item {
-    font-size: 20px;
     padding: 0.5em;
   }
 
@@ -908,33 +957,27 @@ label.required:after {
 
   h1 {
     margin-top: -5px;
-    font-size: 40px;
   }
 
   h2 {
-    font-size: 30px;
     margin: 1em 0 0.5em 0;
   }
 
   h3,
   .h3 {
-    font-size: 35px;
     padding-bottom: 1em;
   }
 
   h4 {
-    font-size: 25px;
     font-weight: 600;
   }
 
   p,
   .p {
-    font-size: 20px;
     margin-bottom: 2em;
   }
 
   .small-text {
-    font-size: 20px !important;
     margin-bottom: 0.5em;
   }
 
@@ -967,14 +1010,6 @@ label.required:after {
     width: 100px;
   }
 
-  .header-profile-txt h2 {
-    font-size: 30px;
-  }
-
-  .header-profile-txt h3 {
-    font-size: 15px;
-  }
-
   .header-nav {
     display: none;
   }
@@ -998,13 +1033,11 @@ label.required:after {
   }
 
   .about-container ul > li {
-    font-size: 20px;
     margin-bottom: 0.5em;
   }
 
   .about-container ul:last-of-type > li > i,
   .about-container ul:last-of-type > li > img {
-    font-size: 40px;
     width: 40px;
   }
 
@@ -1019,10 +1052,6 @@ label.required:after {
 
   .projet-lien {
     height: 200px;
-  }
-
-  .projet-lien h3 {
-    font-size: 15px;
   }
 
   .projects-container > ul > li {
@@ -1091,7 +1120,6 @@ label.required:after {
   }
 
   .mobile-tabs-item {
-    font-size: 20px;
     padding: 0.5em;
   }
 
@@ -1112,9 +1140,7 @@ label.required:after {
   }
 }
 
-
 /* KEYFRAMES */
-
 
 /* ----------------------------------------------
 * Generated by Animista on 2020-5-29 14:43:51
@@ -1122,7 +1148,6 @@ label.required:after {
 * See http://animista.net/license for more info. 
 * w: http://animista.net, t: @cssanimista
 * ---------------------------------------------- */
-
 
 /**
 * ----------------------------------------
