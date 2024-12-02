@@ -1,20 +1,56 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
-
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+	<section id="head">
+		<div class="container">
+			<div class="greetings vt323">Bonjour, moi c'est</div>
+			<div class="name">
+				<span>N</span>
+				<span>i</span>
+				<span>c</span>
+				<span>o</span>
+				<span>l</span>
+				<span>a</span>
+				<span>s</span>
+				<span>&nbsp;</span>
+				<span>H</span>
+				<span>a</span>
+				<span>l</span>
+				<span>b</span>
+				<span>e</span>
+				<span>r</span>
+				<span>s</span>
+				<span>t</span>
+				<span>a</span>
+				<span>d</span>
+				<span>t</span>
+				<span>.</span>
+			</div>
+			<div class="title">Je conçois des solutions web sur mesure.</div>
+			<div class="bio">Je suis développeur web freelance avec une expertise en PHP, Symfony, WordPress et JavaScript. J’accompagne mes clients dans la création de sites sur mesure, alliant performance et design.</div>
+		</div>
+	</section>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+	<section id="about" class="w-100">
+		<h2 class="number vt323">
+			<span class="neon-green">01.</span>
+			A propos de moi
+		</h2>
+		<div class="d-flex">
+			<div class="w-50 left-panel light-grey">
+				<p>Bonjour, je m’appelle Nicolas Halberstadt, développeur web freelance passionné par la création de solutions numériques modernes et sur mesure. Avec une expertise en PHP, Symfony, Wordpress et JavaScript, je conçois des sites performants et adaptés aux besoins de mes clients</p>
+				<p>Mon objectif ? Allier créativité, efficacité et accessibilité pour offrir des expériences utilisateur uniques. Que ce soit pour un site vitrine, une application web ou des fonctionnalités spécifiques, je mets tout en œuvre pour transformer vos idées en réalité.</p>
+			</div>
+			<div class="w-50 right-panel">
+				<img src="https://placehold.co/220x280" alt="">
+			</div>
+		</div>
+	</section>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/Users/nicolashalberstadt/Local/portfolio/src/Controller/MainController.php</code></li>
-        <li>Your template at <code>/Users/nicolashalberstadt/Local/portfolio/templates/main/index.html.twig</code></li>
-    </ul>
-</div>
+	<section id="xp" class="w-100">
+		<h2 class="number vt323">
+			<span class="neon-green">02.</span>
+			Expérience
+		</h2>
+	</section>
 {% endblock %}
