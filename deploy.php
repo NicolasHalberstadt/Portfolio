@@ -7,6 +7,8 @@ require 'recipe/symfony.php';
 // Config
 
 set('repository', 'git@github.com:NicolasHalberstadt/Portfolio.git');
+set('default_environment', ['LC_MESSAGES' => 'C']);
+set('ssh_multiplexing', false);
 
 add('shared_files', []);
 add('shared_dirs', []);
@@ -16,7 +18,8 @@ add('writable_dirs', []);
 
 host('Portfolio')
     ->set('remote_user', 'u416463632')
-    ->set('deploy_path', '/home/u416463632/domains/nicolashalberstadt.com/public_html');
+    ->set('deploy_path', '/home/u416463632/domains/nicolashalberstadt.com/public_html')
+    ->set('identity_file', '~/.ssh/id_rsa');
 
 // Tasks
 
