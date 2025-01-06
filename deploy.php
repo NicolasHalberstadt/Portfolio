@@ -11,7 +11,7 @@ set('default_environment', ['LC_MESSAGES' => 'C']);
 set('deploy_path', '/home/u416463632/domains/nicolashalberstadt.com/public_html');
 
 // SSH Options
-set('ssh_options', '-o "SendEnv LANG LC_.*" -o "BatchMode=yes" -o "StrictHostKeyChecking=no" -o "LogLevel=ERROR"'); 
+set('ssh_options', '-T -o "SendEnv LANG LC_.*" -o "BatchMode=yes" -o "StrictHostKeyChecking=no" -o "LogLevel=ERROR"');
 
 add('shared_files', []);
 add('shared_dirs', []);
