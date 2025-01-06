@@ -8,7 +8,6 @@ require 'recipe/symfony.php';
 
 set('repository', 'git@github.com:NicolasHalberstadt/Portfolio.git');
 set('default_environment', ['LC_MESSAGES' => 'C']);
-set('ssh_multiplexing', false);
 
 add('shared_files', []);
 add('shared_dirs', []);
