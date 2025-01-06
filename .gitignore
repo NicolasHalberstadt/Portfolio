@@ -13,3 +13,5 @@ ecrets/prod/prod.decrypt.private.php
 /public/assets/
 /assets/vendor/
 ###< symfony/asset-mapper ###
+
+.DS_Store
