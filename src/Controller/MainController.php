@@ -32,7 +32,8 @@ class MainController extends AbstractController
             $data = $form->getData();
 
             $email = (new Email())
-                ->from($data['email'])
+                ->from('no-reply@nicolashalberstadt')
+                ->replyTo($data['email'])
                 ->to('contact@nicolashalberstadt.com')
                 ->subject('Nouvelle demande de contact')
                 ->text("Message : " . $data["message"]);
