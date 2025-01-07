@@ -20,6 +20,7 @@ add('writable_dirs', []);
 // Hosts
 host('Portfolio')
     ->set('remote_user', 'u416463632')
+    ->set('deploy_path', '/home/u416463632/domains/nicolashalberstadt.com/public_html')
     ->set('identity_file', '~/.ssh/id_rsa');
 
 // Tasks
