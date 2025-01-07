@@ -158,7 +158,7 @@ $(document).ready(function () {
 
     $('#contact form').on('submit', function (e) {
         e.preventDefault();
-
+console.log('submot');
         let $form = $(this);
         let url = $form.attr('action');
         let formData = $form.serialize();
