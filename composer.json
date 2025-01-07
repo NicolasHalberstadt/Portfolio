@@ -15,6 +15,7 @@
         "symfony/form": "7.1.*",
         "symfony/framework-bundle": "7.1.*",
         "symfony/mailer": "7.1.*",
+        "symfony/requirements-checker": "^2.0",
         "symfony/runtime": "7.1.*",
         "symfony/twig-bundle": "7.1.*",
         "symfony/validator": "7.1.*",
@@ -53,7 +54,10 @@
     },
     "scripts": {
         "auto-scripts": {
-            "importmap:install": "symfony-cmd"
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd",
+            "importmap:install": "symfony-cmd",
+            "requirements-checker": "script"
         },
         "post-install-cmd": [
             "@auto-scripts"
