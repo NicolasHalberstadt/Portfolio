@@ -158,11 +158,11 @@ $(document).ready(function () {
 
     $('#contact form').on('submit', function (e) {
         e.preventDefault();
-console.log('submot');
+
         let $form = $(this);
         let url = $form.attr('action');
         let formData = $form.serialize();
-        let $loading = $('#loading');
+        console.log(url); // Vérifie que le chemin est correct : "/contact"
         $('#contact_submit').html('<i class="fa-solid fa-spinner fa-spin"></i>');
         setTimeout(function () {
             $.ajax({
