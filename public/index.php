@@ -1,5 +1,5 @@
 <?php
-die('Symfony is handling the request');
+
 use App\Kernel;
 
 require_once dirname(__DIR__).'/vendor/autoload_runtime.php';
