@@ -161,8 +161,11 @@ $(document).ready(function () {
 
         let $form = $(this);
         let url = $form.attr('action');
+        if (!url.startsWith('https://')) {
+            url = 'https://nicolashalberstadt.com' + url;
+        }
+        console.log(url); // Devrait afficher : "https://nicolashalberstadt.com/contact"
         let formData = $form.serialize();
-        console.log(url); // Vérifie que le chemin est correct : "/contact"
         $('#contact_submit').html('<i class="fa-solid fa-spinner fa-spin"></i>');
         setTimeout(function () {
             $.ajax({
