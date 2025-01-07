@@ -54,31 +54,33 @@ section {
 html {
     scroll-behavior: smooth;
     #cursor {
-        position: fixed;
-        opacity: 0;
-        pointer-events: none;
-        mix-blend-mode: difference;
-        width: 1px;
-        min-height: 1px;
-        border-radius: 50%;
-        background-color: rgba(100, 255, 218, 0.1);
-        transition: transform 350ms ease;
-        transform: translate(-50%, -50%) scale(3);
-        z-index: 999999;
-        &::before {
-            content: "";
+        @media screen and (min-width: 768px) {
+            position: fixed;
+            opacity: 0;
+            pointer-events: none;
             mix-blend-mode: difference;
-            margin: auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            min-height: 100%;
-            box-shadow: 0 0 20px 40px rgba(100, 255, 218, 0.1);
+            width: 1px;
+            min-height: 1px;
             border-radius: 50%;
-            filter: blur(5px);
+            background-color: rgba(100, 255, 218, 0.1);
+            transition: transform 350ms ease;
+            transform: translate(-50%, -50%) scale(3);
+            z-index: 999999;
+            &::before {
+                content: "";
+                mix-blend-mode: difference;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                min-height: 100%;
+                box-shadow: 0 0 20px 40px rgba(100, 255, 218, 0.1);
+                border-radius: 50%;
+                filter: blur(5px);
+            }
         }
     }
     body {
@@ -291,28 +293,10 @@ html {
                 .name {
                     img {
                         width: 65%;
+                        @media screen and (max-width: 768px) {
+                            width: 80%;
+                        }
                     }
-                    // font-weight: bold;
-                    // cursor: pointer;
-                    // display: inline-block;
-                    // font-size: 40px;
-                    // color: white;
-                    // letter-spacing: -2px;
-
-                    // @media screen and (max-width: 768px) {
-                    //     letter-spacing: normal;
-                    // }
-
-                    // span {
-                    //     transition:
-                    //         transform 0.3s ease,
-                    //         color 0.3s ease;
-                    //     display: inline-block;
-                    //     &:hover {
-                    //         color: $neonGreen;
-                    //         transform: scale(1.2) rotate(5deg);
-                    //     }
-                    // }
                 }
 
                 .title {
@@ -328,35 +312,39 @@ html {
                 .key-points {
                     margin-top: 40px;
                     .point {
-                        .bg {
-                            border-radius: 8px;
-                            padding: 20px;
-                            .icon {
-                                font-size: 30px;
-                                margin-bottom: 10px;
-                                display: block;
-                                color: $neonGreen;
-                            }
+                        border-radius: 8px;
+                        padding: 20px;
+                        .icon {
+                            font-size: 30px;
+                            margin-bottom: 10px;
+                            display: block;
+                            color: $neonGreen;
+                        }
 
-                            h5 {
-                                font-size: 1.2rem;
-                                color: $lightGrey;
-                                height: 20px;
-                                margin-bottom: 15px;
-                            }
-
-                            p {
-                                font-size: 0.95rem;
-                                color: #bbb;
-                                height: 80px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                            }
+                        h5 {
+                            font-size: 1.2rem;
+                            color: $lightGrey;
+                            height: 20px;
+                            margin-bottom: 15px;
                             @media screen and (max-width: 768px) {
-                                padding-bottom: 0;
-                                padding-top: 0;
+                                height: auto;
                             }
+                        }
+
+                        p {
+                            font-size: 0.95rem;
+                            color: #bbb;
+                            height: 80px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            @media screen and (max-width: 768px) {
+                                height: auto;
+                            }
+                        }
+                        @media screen and (max-width: 768px) {
+                            padding-bottom: 0;
+                            padding-top: 0;
                         }
                     }
                 }
