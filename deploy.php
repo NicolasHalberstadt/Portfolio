@@ -1,34 +1,23 @@
 <?php
-
 namespace Deployer;
 
 require 'recipe/symfony.php';
 
 // Config
-set('ssh_type', 'native');
-set('repository', 'git@github.com:NicolasHalberstadt/Portfolio.git');
-set('default_environment', ['LC_MESSAGES' => 'C']);
-set('deploy_path', '/home/u416463632/domains/nicolashalberstadt.com/public_html');
 
-// SSH Options
-set('ssh_options', '-T -o "SendEnv LANG LC_.*" -o "BatchMode=yes" -o "StrictHostKeyChecking=no" -o "LogLevel=ERROR"');
+set('repository', 'git@github.com:NicolasHalberstadt/Portfolio.git');
 
 add('shared_files', []);
 add('shared_dirs', []);
 add('writable_dirs', []);
 
 // Hosts
-host('Portfolio')
+
+host('147.79.103.103')
     ->set('remote_user', 'u416463632')
     ->set('deploy_path', '/home/u416463632/domains/nicolashalberstadt.com/public_html')
-    ->set('identity_file', '~/.ssh/id_rsa');
-
-// Tasks
-task('deploy:assets', function () {
-    run('cd {{release_path}} && php bin/console sass:build');
-    run('cd {{release_path}} && php bin/console asset-map:compile');
-});
+    >set('identity_file', '~/.ssh/id_rsa');
 
 // Hooks
-after('deploy:symlink', 'deploy:assets');
+
 after('deploy:failed', 'deploy:unlock');
