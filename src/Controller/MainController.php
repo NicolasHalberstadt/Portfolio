@@ -9,6 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
+use Symfony\Component\Mime\Address;
 
 class MainController extends AbstractController
 {
@@ -31,12 +32,19 @@ class MainController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $data = $form->getData();
 
+            $full_name = ucfirst($data["firstname"]) . " " . ucfirst($data["lastname"]);
+            $email_message = "
+            <strong>Nom: </strong> " . $full_name . " <br>
+            <strong>Email: </strong> " . $data["email"] . " <br>
+            <strong>Choix: </strong> " . $data["type"] . " <br>
+            <strong>Message: </strong> " . $data["message"] . "<br>";
+
             $email = (new Email())
-                ->from('no-reply@nicolashalberstadt.com')
-                ->replyTo($data['email'])
+                ->from(new Address('no-reply@nicolashalberstadt.com', 'No-Reply'))
+                ->replyTo(new Address($data['email'], $full_name))
                 ->to('contact@nicolashalberstadt.com')
                 ->subject('Nouvelle demande de contact')
-                ->text("Message : " . $data["message"]);
+                ->text($email_message);
 
             $mailer->send($email);
 
