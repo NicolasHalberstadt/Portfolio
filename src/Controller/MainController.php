@@ -44,7 +44,7 @@ class MainController extends AbstractController
                 ->replyTo(new Address($data['email'], $full_name))
                 ->to('contact@nicolashalberstadt.com')
                 ->subject('Nouvelle demande de contact')
-                ->text($email_message);
+                ->html($email_message);
 
             $mailer->send($email);
 
