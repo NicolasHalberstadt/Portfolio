@@ -314,7 +314,7 @@ html {
 
                     @media screen and (max-width: 768px) {
                         line-height: normal;
-                        font-size:1.3rem;
+                        font-size: 1.3rem;
                     }
                 }
 
@@ -845,6 +845,56 @@ html {
                 }
             }
         }
+
+        .error-page {
+            background-color: $darkBlue;
+            color: $lightGrey;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .container {
+                padding: 20px;
+                background-color: $darkerBlue;
+                border-radius: 10px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+
+                .error-code {
+                    font-family: "VT323", serif;
+                    font-size: 10rem;
+                    color: $neonGreen;
+                    margin-bottom: 20px;
+                }
+
+                .error-message {
+                    font-size: 1.5rem;
+                    margin-bottom: 30px;
+                    color: $lightGrey;
+                }
+
+                .home-button {
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    background-color: $neonGreen;
+                    color: $darkBlue;
+                    border: none;
+                    padding: 10px 30px;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    transition:
+                        background-color 0.2s ease-in-out,
+                        color 0.2s ease-in-out,
+                        border 0.2s ease-in-out;
+                    &:hover {
+                        background-color: $darkBlue;
+                        color: $neonGreen;
+                        border: 1px solid $neonGreen;
+                    }
+                }
+            }
+        }
     }
 
     #footer {
@@ -883,59 +933,6 @@ html {
             }
         }
     }
-
-    //\\ Error Page 404 //\\
-    .error-page {
-        background-color: $darkBlue;
-        color: $lightGrey;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-        .container {
-            padding: 20px;
-            background-color: $darkerBlue;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-
-            .error-code {
-                font-family: "VT323", serif;
-                font-size: 10rem;
-                color: $neonGreen;
-                margin-bottom: 20px;
-            }
-
-            .error-message {
-                font-size: 1.5rem;
-                margin-bottom: 30px;
-                color: $lightGrey;
-            }
-
-            .home-button {
-                text-decoration: none;
-                font-size: 1.2rem;
-                background-color: $neonGreen;
-                color: $darkBlue;
-                border: none;
-                padding: 10px 30px;
-                border-radius: 50px;
-                cursor: pointer;
-                transition:
-                    background-color 0.2s ease-in-out,
-                    color 0.2s ease-in-out,
-                    border 0.2s ease-in-out;
-                &:hover {
-                    background-color: $darkBlue;
-                    color: $neonGreen;
-                    border: 1px solid $neonGreen;
-                }
-            }
-        }
-    }
-
-    //\\ !Error Page 404! \\
 }
 // ### Keyframes ###
 @-webkit-keyframes inM {
