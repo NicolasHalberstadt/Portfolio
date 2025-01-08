@@ -1,6 +1,38 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+	<header>
+		<nav class="nav">
+			<div class="custom-container px-2 w-100">
+				<div class="logo">
+					<a href="#">
+						<img height="80" src="{{ asset('uploads/logo_sm.png')}}" alt="Logo Nicolas Halberstadt">
+					</a>
+				</div>
+				<div class="main_list vt323">
+					<ol class="navlinks">
+						<li>
+							<a href="#tarifs">tarifs</a>
+						</li>
+						<li>
+							<a href="#realisations">réalisations</a>
+						</li>
+						<li>
+							<a href="#about">a propos</a>
+						</li>
+						<li>
+							<a href="#contact">contact</a>
+						</li>
+					</ol>
+				</div>
+				<span class="nav-trigger">
+					<i></i>
+					<i></i>
+					<i></i>
+				</span>
+			</div>
+		</nav>
+	</header>
 	<section id="head">
 		<div class="container">
 			<div class="greetings vt323">Bonjour, moi c'est</div>

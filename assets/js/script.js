@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     var $cursor = $("#cursor");
     var initCursor = false;
     $(window).on("mousemove", function (e) {
@@ -23,16 +24,17 @@ $(document).ready(function () {
         initCursor = false;
     });
 
-    $('.nav-trigger').click(function () {
-        $(this).toggleClass('active');
-        $(".main_list").toggleClass("show_list");
-    });
+    if ($(window).width() < 768) {
+        $('.nav-trigger').click(function () {
+            $(this).toggleClass('active');
+            $(".main_list").toggleClass("show_list");
+        });
 
-    $('.main_list .navlinks li a').on('click', function () {
-        $('.nav-trigger').toggleClass('active');
-        $(".main_list").toggleClass("show_list");
-    })
-
+        $('.main_list .navlinks li a').on('click', function () {
+            $('.nav-trigger').toggleClass('active');
+            $(".main_list").toggleClass("show_list");
+        })
+    }
     // Contact button GSAP animation 
     class Button {
         constructor(buttonElement) {
