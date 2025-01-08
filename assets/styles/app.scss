@@ -846,90 +846,40 @@ html {
             }
         }
 
-        .error-page {
+        #footer {
             background-color: $darkBlue;
-            color: $lightGrey;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            color: white;
+            padding: 30px 0;
             text-align: center;
-
-            .container {
-                padding: 20px;
-                background-color: $darkerBlue;
-                border-radius: 10px;
-                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-
-                .error-code {
-                    font-family: "VT323", serif;
-                    font-size: 10rem;
+            font-size: 0.9rem;
+            .footer-top {
+                margin-bottom: 20px;
+                h3 {
+                    font-size: 1.8rem;
                     color: $neonGreen;
-                    margin-bottom: 20px;
-                }
-
-                .error-message {
-                    font-size: 1.5rem;
-                    margin-bottom: 30px;
-                    color: $lightGrey;
-                }
-
-                .home-button {
-                    text-decoration: none;
-                    font-size: 1.2rem;
-                    background-color: $neonGreen;
-                    color: $darkBlue;
-                    border: none;
-                    padding: 10px 30px;
-                    border-radius: 50px;
-                    cursor: pointer;
-                    transition:
-                        background-color 0.2s ease-in-out,
-                        color 0.2s ease-in-out,
-                        border 0.2s ease-in-out;
-                    &:hover {
-                        background-color: $darkBlue;
-                        color: $neonGreen;
-                        border: 1px solid $neonGreen;
-                    }
                 }
             }
-        }
-    }
-
-    #footer {
-        background-color: $darkBlue;
-        color: white;
-        padding: 30px 0;
-        text-align: center;
-        font-size: 0.9rem;
-        .footer-top {
-            margin-bottom: 20px;
-            h3 {
-                font-size: 1.8rem;
-                color: $neonGreen;
-            }
-        }
-        .footer-content {
-            .social-links {
-                margin-bottom: 15px;
-                a {
-                    color: white;
-                    margin: 0 10px;
-                    font-size: 1.5rem;
-                    transition: color 0.3s ease;
-                    text-decoration: none;
-                    &:hover {
-                        color: $neonGreen;
-                    }
-                    i {
-                        display: inline-block;
+            .footer-content {
+                .social-links {
+                    margin-bottom: 15px;
+                    a {
+                        color: white;
+                        margin: 0 10px;
+                        font-size: 1.5rem;
+                        transition: color 0.3s ease;
+                        text-decoration: none;
+                        &:hover {
+                            color: $neonGreen;
+                        }
+                        i {
+                            display: inline-block;
+                        }
                     }
                 }
-            }
-            p {
-                margin: 0;
-                color: lighten(white, 30%);
+                p {
+                    margin: 0;
+                    color: lighten(white, 30%);
+                }
             }
         }
     }
