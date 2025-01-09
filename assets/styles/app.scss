@@ -114,17 +114,15 @@ html {
                         width: auto;
                         height: auto;
                         padding-left: 1.5rem;
-                        @media screen and (max-width: 768px) {
-                            padding: 0;
-                        }
                         img {
-                            height: 45px;
+                            height: 60px;
                         }
                     }
                     .main_list {
-                        position: absolute;
-                        top: 65px;
+                        float: right;
                         @media screen and (max-width: 768px) {
+                            position: absolute;
+                            top: 65px;
                             width: 100%;
                             visibility: hidden;
                             opacity: 0;
