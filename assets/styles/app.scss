@@ -107,33 +107,39 @@ html {
                     align-items: center;
                     @media screen and (max-width: 768px) {
                         display: block;
+                        padding: 0 !important;
                     }
                     .logo {
                         float: left;
                         width: auto;
                         height: auto;
-                        padding-left: 3rem;
+                        padding-left: 1.5rem;
                         @media screen and (max-width: 768px) {
                             padding: 0;
                         }
+                        img {
+                            height: 45px;
+                        }
                     }
                     .main_list {
-                        float: right;
+                        position: absolute;
+                        top: 65px;
                         @media screen and (max-width: 768px) {
                             width: 100%;
                             visibility: hidden;
                             opacity: 0;
                             height: 0;
+                            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
                         }
                         &.show_list {
                             @media screen and (max-width: 768px) {
-                                height: 0;
                                 transition:
                                     visibility 0s,
                                     opacity 0.5s linear;
                                 visibility: visible;
                                 opacity: 1;
                                 height: auto;
+                                background-color: $darkerBlue;
                             }
                         }
                         ol {
@@ -144,7 +150,6 @@ html {
                             @media screen and (max-width: 768px) {
                                 flex-direction: column;
                                 height: auto;
-                                background-color: $darkBlue;
                             }
 
                             li {
@@ -166,8 +171,7 @@ html {
                                         height: 20px;
                                         text-align: center;
                                         width: 100%;
-                                        font-size: 3rem;
-                                        // padding: 20px;
+                                        font-size: 2rem;
                                     }
                                     &:hover {
                                         color: $neonGreen;
@@ -712,9 +716,10 @@ html {
                     #successMessage {
                         display: none;
                         margin-top: 10px;
-                        height: 550px;
+                        height: 400px;
                         position: absolute;
                         top: 0;
+                        width: 100%;
                         .message-container {
                             display: flex;
                             justify-content: center;

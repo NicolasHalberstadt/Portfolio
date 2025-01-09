@@ -178,9 +178,13 @@ $(document).ready(function () {
                         $form.find('input, textarea, button').prop('disabled', true);
                         $('#successMessage .message-container').text(response.message);
                         $('#successMessage').fadeIn();
+                        $('html').animate(
+                            { scrollTop: $('#contact').offset().top },
+                            800
+                        );
+
                     } else if (response.status === 'error') {
                         $('#contact_submit').html('Envoyer');
-
                         $form.find('.error-message').remove();
                         $.each(response.errors, function (fieldName, errorMessage) {
                             let $field = $form.find(`#contact_${fieldName}`);
