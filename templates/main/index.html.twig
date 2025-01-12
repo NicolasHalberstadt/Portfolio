@@ -18,7 +18,7 @@
 							<a href="#realisations">réalisations</a>
 						</li>
 						<li>
-							<a href="#about">à propos</a>
+							<a href="#a-propos">à propos</a>
 						</li>
 						<li>
 							<a href="#contact">contact</a>
@@ -35,7 +35,6 @@
 	</header>
 	<section id="head">
 		<div class="container">
-			<div class="greetings vt323">Bonjour, moi c'est</div>
 			<div class="name">
 				<img src="{{asset('uploads/logo_xl.png') }}" alt="">
 			</div>
@@ -53,14 +52,14 @@
 						<i class="fas fa-wallet"></i>
 					</span>
 					<h5>Pas de coûts cachés</h5>
-					<p>Un tarif clair et transparent, sans mauvaises surprises.</p>
+					<p>Un tarif clair et transparent.</p>
 				</div>
 				<div class="point col">
 					<span class="icon">
 						<i class="fas fa-cogs"></i>
 					</span>
 					<h5>Gestion simplifiée</h5>
-					<p>Gérez vos contenus en toute autonomie grâce à une interface simple et intuitive.</p>
+					<p>Gérez vos contenus en toute autonomie grâce à une interface simple.</p>
 				</div>
 				<div class="point col">
 					<span class="icon">
@@ -77,7 +76,7 @@
 				</a>
 			</div>
 			<div class="arrow">
-				<a href="#about"></a>
+				<a href="#a-propos"></a>
 			</div>
 		</div>
 	</section>
@@ -98,30 +97,18 @@
 				<div class="tab vitrine active" id="vitrine">
 					<div class="row row-cols-1 mt-2 g-2 g-md-4">
 						<div class="col">
-							<div class="card h-100">
-								<h3>À partir de 1700€</h3>
-								<p>Un site vitrine complet et sur mesure, idéal pour présenter votre activité.</p>
+							<div class="card h-100 text-center">
+								<p>
+									Un site vitrine complet et conçu sur mesure pour refléter l’identité de votre activité.
+									<br>
+									Parfait pour mettre en avant vos services, vos valeurs et faciliter le contact avec vos clients.
+								</p>
+								<h3 class="text-center d-block neon-green">À partir de 1700€</h3>
 							</div>
 						</div>
 					</div>
-					<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
-						<div class="col">
-							<div class="card h-100 fold-btn" id="vitrinePrices">
-								<h3>Ce prix comprend
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<ul class="my-2 vitrinePrices folder">
-									<li>Assistance pour le choix et l'achat de votre nom de domaine et hébergement</li>
-									<li>Design responsive et optimisé pour le SEO</li>
-									<li>Configuration d’une adresse mail professionnelle</li>
-									<li>Intégration de vos contenus : textes, images, logo, etc.</li>
-									<li>Mise en ligne rapide avec configuration complète</li>
-								</ul>
-							</div>
-						</div>
 
+					<div class="row row-cols-1 mt-2 mt-md-0 g-2 g-md-4">
 						<div class="col">
 							<div class="card h-100 fold-btn" id="vitrineProcess">
 								<h3>Le processus de création
@@ -134,9 +121,6 @@
 										<strong>Échange sur vos besoins et objectifs</strong>
 									</li>
 									<li>
-										<strong>Préparation de l'hébergement et du nom de domaine</strong>
-									</li>
-									<li>
 										<strong>Conception du design et intégration des contenus</strong>
 									</li>
 									<li>
@@ -145,13 +129,30 @@
 									<li>
 										<strong>Mise en ligne du site</strong>
 									</li>
-									<li style="list-style:none"></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 
-					<div class="row row-cols-1 mt-2 mt-md-0 g-2 g-md-4">
+					<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
+						<div class="col">
+							<div class="card h-100 fold-btn" id="vitrinePrices">
+								<h3>Ce prix comprend
+									<span class="d-inline-block mx-3 d-md-none">
+										<i class="fa-solid fa-chevron-down"></i>
+									</span>
+								</h3>
+								<ul class="my-2 vitrinePrices folder">
+									<li>Un accompagnement pour choisir et acheter votre nom de domaine et hébergement</li>
+									<li>Un design adapté à tous les écrans et optimisé pour le référencement (SEO)</li>
+									<li>Une adresse e-mail professionnelle (@votreentreprise.com)</li>
+									<li>Une structure comprenant jusqu’à 4 pages</li>
+									<li>Vos contenus parfaitement intégrés : textes, images, logo, etc.</li>
+									<li>Un site rapide et une configuration complète</li>
+									<li>Une formation d'1h à l'utilisation de votre site</li>
+								</ul>
+							</div>
+						</div>
 						<div class="col">
 							<div class="card h-100 fold-btn" id="vitrineOptions">
 								<h3>
@@ -162,29 +163,24 @@
 								</h3>
 								<ul class="my-2 vitrineOptions folder">
 									<li>
+										Configuration d’adresses e-mail professionnelles supplémentaire
+										<strong>(+ 30€ TTC par adresse)</strong>
+									</li>
+									<li>
+										Suivi analytique et rapports personnalisés
+										<strong>(+ 150€ TTC)</strong>
+									</li>
+									<li>
+										Mise en place de mesures de sécurité avancées (SSL, protection contre les attaques)
+										<strong>(+ 200€ TTC)</strong>
+									</li>
+									<li>
+										Site bilingue Français - Anglais
+										<strong>(+ 150€ TTC)</strong>
+									</li>
+									<li>
 										Création d’un blog intégré
-										<strong>- 200€ TTC</strong>
-									</li>
-									<li>
-										Optimisation avancée du référencement (SEO) pour une meilleure visibilité
-										<strong>- 300€ TTC</strong>
-									</li>
-									<li>
-										Création de pages supplémentaires (par exemple, portfolio, témoignages, etc.)
-										<strong>- 100€ TTC</strong>
-										par page
-									</li>
-									<li>
-										Mise en place de Google Analytics et suivi de performance
-										<strong>- 150€ TTC</strong>
-									</li>
-									<li>
-										Intégration de témoignages clients avec carousel
-										<strong>- 150€ TTC</strong>
-									</li>
-									<li>
-										Formation à la gestion de contenu et mise à jour du site
-										<strong>- 300€ TTC</strong>
+										<strong>(+ 200€ TTC)</strong>
 									</li>
 								</ul>
 							</div>
@@ -192,6 +188,20 @@
 					</div>
 
 					<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
+						<div class="col">
+							<div class="card h-100 fold-btn" id="vitrineSAV">
+								<h3>Service après vente
+									<span class="d-inline-block mx-3 d-md-none">
+										<i class="fa-solid fa-chevron-down"></i>
+									</span>
+								</h3>
+								<div class="my-2 folder vitrineSAV">
+									<p>Accompagnement gratuit pendant le premier mois après la mise en ligne. Les modifications supplémentaires seront facturées à
+										<strong>50€ TTC/heure</strong>
+										après cette période.</p>
+								</div>
+							</div>
+						</div>
 						<div class="col">
 							<div class="card h-100 fold-btn" id="vitrinePayment">
 								<h3>Conditions de paiement
@@ -213,20 +223,6 @@
 								</div>
 							</div>
 						</div>
-						<div class="col">
-							<div class="card h-100 fold-btn" id="vitrineSAV">
-								<h3>SAV
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<div class="my-2 folder vitrineSAV">
-									<p>Accompagnement gratuit pendant le premier mois après la mise en ligne. Les modifications supplémentaires seront facturées à
-										<strong>50€ TTC/heure</strong>
-										après cette période.</p>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 
@@ -234,30 +230,16 @@
 				<div class="tab e-commerce" id="commerce">
 					<div class="row row-cols-1 mt-2 g-2 g-md-4">
 						<div class="col">
-							<div class="card h-100">
-								<h3>À partir de 2500€</h3>
-								<p>Un site e-commerce performant pour vendre vos produits en ligne.</p>
+							<div class="card h-100 text-center">
+								<p>
+									Un site e-commerce performant, pensé pour simplifier la gestion de vos produits et offrir une expérience d’achat fluide.<br>
+									Une solution idéale pour développer vos ventes en ligne et toucher un public plus large.
+								</p>
+								<h3 class="neon-green">À partir de 2500€</h3>
 							</div>
 						</div>
 					</div>
-					<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
-						<div class="col">
-							<div class="card h-100 fold-btn" id="ecomPrices">
-								<h3>Ce prix comprend
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<ul class="my-2 folder ecomPrices">
-									<li>Assistance pour le choix et l'achat de votre nom de domaine et hébergement</li>
-									<li>Design responsive et optimisé pour le SEO</li>
-									<li>Configuration de 3 adresses e-mail professionnelles</li>
-									<li>Intégration de vos contenus et création de 30 fiches produit</li>
-									<li>Paramétrage des moyens de paiement et de livraison</li>
-								</ul>
-							</div>
-						</div>
-
+					<div class="row row-cols-1 mt-2 mt-md-0 g-2 g-md-4">
 						<div class="col">
 							<div class="card h-100 fold-btn" id="ecomProcess">
 								<h3>Le processus de création
@@ -270,13 +252,7 @@
 										<strong>Échange sur vos besoins et objectifs</strong>
 									</li>
 									<li>
-										<strong>Préparation de l'hébergement et du nom de domaine</strong>
-									</li>
-									<li>
 										<strong>Conception du design et intégration des contenus</strong>
-									</li>
-									<li>
-										<strong>Configuration de la boutique, des produits et moyens de paiement</strong>
 									</li>
 									<li>
 										<strong>Révisions et ajustements</strong>
@@ -289,7 +265,26 @@
 						</div>
 					</div>
 
-					<div class="row row-cols-1 mt-2 mt-md-0 g-2 g-md-4">
+					<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
+						<div class="col">
+							<div class="card h-100 fold-btn" id="ecomPrices">
+								<h3>Ce prix comprend
+									<span class="d-inline-block mx-3 d-md-none">
+										<i class="fa-solid fa-chevron-down"></i>
+									</span>
+								</h3>
+								<ul class="my-2 folder ecomPrices">
+									<li>Un accompagnement pour choisir et acheter votre nom de domaine et hébergement</li>
+									<li>Un design adapté à tous les écrans et optimisé pour le référencement (SEO)</li>
+									<li>3 adresses e-mail professionnelles (@votreentreprise.com)</li>
+									<li>Une structure comprenant jusqu’à 6 pages</li>
+									<li>Vos contenus parfaitement intégrés : textes, images, logo, etc</li>
+									<li>30 fiches produits</li>
+									<li>Un site rapide et une configuration e-commerce complète</li>
+									<li>Une formation de 2h à l'utilisation de votre site</li>
+								</ul>
+							</div>
+						</div>
 						<div class="col">
 							<div class="card h-100 fold-btn" id="ecomOptions">
 								<h3>Options supplémentaires
@@ -299,30 +294,28 @@
 								</h3>
 								<ul class="my-2 folder ecomOptions">
 									<li>
-										Configuration d’adresses e-mail professionnelles
-										<strong>- 30€ TTC</strong>
-										par adresse
+										Configuration d’adresses e-mail professionnelles supplémentaire
+										<strong>(+ 30€ TTC par adresse)</strong>
 									</li>
 									<li>
 										Suivi analytique et rapports personnalisés
-										<strong>- 150€ TTC</strong>
+										<strong>(+ 150€ TTC)</strong>
 									</li>
 									<li>
 										Mise en place de mesures de sécurité avancées (SSL, protection contre les attaques)
-										<strong>- 200€ TTC</strong>
+										<strong>(+ 200€ TTC)</strong>
 									</li>
 									<li>
-										Site multilingue
-										<strong>- 300€ TTC</strong>
-										par langue additionnelle
+										Site bilingue Français - Anglais
+										<strong>(+ 150€ TTC)</strong>
 									</li>
 									<li>
-										Création de promotions et de codes de réduction personnalisés
-										<strong>- 150€ TTC</strong>
+										Création d’un blog intégré
+										<strong>(+ 200€ TTC)</strong>
 									</li>
 									<li>
-										Formation à la gestion complète de votre boutique WooCommerce
-										<strong>- 500€ TTC</strong>
+										50 produits supplémentaires
+										<strong>(+ 200€ TTC)</strong>
 									</li>
 								</ul>
 							</div>
@@ -330,6 +323,20 @@
 					</div>
 
 					<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
+						<div class="col">
+							<div class="card h-100 fold-btn" id="ecomSAV">
+								<h3>Service après vente
+									<span class="d-inline-block mx-3 d-md-none">
+										<i class="fa-solid fa-chevron-down"></i>
+									</span>
+								</h3>
+								<div class="my-2 folder ecomSAV">
+									<p>Accompagnement gratuit pendant les 2 premiers mois après la mise en ligne. Les modifications supplémentaires seront facturées à
+										<strong>50€ TTC/heure</strong>
+										après cette période.</p>
+								</div>
+							</div>
+						</div>
 						<div class="col">
 							<div class="card h-100 fold-btn" id="ecomPayment">
 								<h3>Conditions de paiement
@@ -351,20 +358,6 @@
 								</div>
 							</div>
 						</div>
-						<div class="col">
-							<div class="card h-100 fold-btn" id="ecomSAV">
-								<h3>SAV
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<div class="my-2 folder ecomSAV">
-									<p>Accompagnement gratuit pendant les 2 premiers mois après la mise en ligne. Les modifications supplémentaires seront facturées à
-										<strong>50€ TTC/heure</strong>
-										après cette période.</p>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -378,14 +371,14 @@
 				Réalisations
 			</h2>
 			<div class="projets">
-				<a target="_blank" href="https://mizoboutik.com" class="card mizoboutik">
+				<a target="_blank" href="https://mizoatelier.com" class="card mizoboutik">
 					<div class="card-img-top">
-						<img src="{{ asset('uploads/mizoboutik.png') }}" alt="Projet Mizoboutik">
+						<img src="{{ asset('uploads/mizoboutik.png') }}" alt="Projet Mizoatelier">
 					</div>
 				</a>
-				<a target="_blank" href="https://mizoboutik.com" class="card mizoboutik">
+				<a target="_blank" href="https://mizoatelier.com" class="card mizoboutik">
 					<div class="card-body">
-						<h5 class="card-title">Mizoboutik</h5>
+						<h5 class="card-title">L'atelier Mizo</h5>
 						<p class="card-text">
 							Création d'une boutique en ligne avec WooCommerce : gestion des ventes en Europe, frais de livraison par zone, intégration Apple Pay, Google Pay et PayPal.
 						</p>
@@ -395,7 +388,7 @@
 		</div>
 	</section>
 
-	<section id="about">
+	<section id="a-propos">
 		<div class="container">
 			<h2 class="number vt323">
 				<span class="neon-green">03.</span>
