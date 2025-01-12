@@ -24,6 +24,20 @@ $(document).ready(function () {
         initCursor = false;
     });
 
+    $('#scrollTop').on('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    })
+
+    // Scroll trigger
+    $(window).on('scroll', function () {
+        if($(document).scrollTop() > $('#tarifs').position().top){
+            $('#scrollTop').fadeIn('quick');
+            $('#scrollTop').css('display', 'flex');
+        } else {
+            $('#scrollTop').fadeOut('quick');
+        }
+    })
+
     if ($(window).width() < 768) {
         $('.nav-trigger').click(function () {
             $(this).toggleClass('active');

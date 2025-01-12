@@ -29,15 +29,10 @@ $lightGrey: #c4c4c4;
     background-color: $neonGreen;
 }
 
-.mr-15 {
-    margin-right: 15px;
-}
-
-.ml-45 {
-    margin-left: 45px;
-}
-.ml-55 {
-    margin-left: 55px;
+.mt-md-0 {
+    @media screen and (max-width: 768px) {
+        margin-top: 0 !important;
+    }
 }
 
 section {
@@ -81,6 +76,30 @@ html {
                 border-radius: 50%;
                 filter: blur(5px);
             }
+        }
+    }
+    #scrollTop {
+        display: none;
+        position: fixed;
+        cursor: pointer;
+        bottom: 20px;
+        width: 60px;
+        height: 60px;
+        right: 20px;
+        background-color: $neonGreen;
+        color: $darkerBlue;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        transition:
+            color 0.3s ease-in-out,
+            background-color 0.3s ease-in-out,
+            border 0.3s ease-in-out;
+        &:hover {
+            color: $neonGreen;
+            background-color: $darkerBlue;
+            border: 1px solid $neonGreen;
         }
     }
     body {
@@ -127,13 +146,14 @@ html {
                             visibility: hidden;
                             opacity: 0;
                             height: 0;
-                            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+                            box-shadow: 0px 70px 40px rgba(0, 0, 0, 0.5);
+                            transition:
+                                visibility 0.3s ease-in-out,
+                                opacity 0s ease-in-out,
+                                height 0.3s ease-in-out;
                         }
                         &.show_list {
                             @media screen and (max-width: 768px) {
-                                transition:
-                                    visibility 0s,
-                                    opacity 0.5s linear;
                                 visibility: visible;
                                 opacity: 1;
                                 height: auto;
@@ -305,7 +325,6 @@ html {
                     font-size: 25px;
                     color: $lightGrey;
                     line-height: 4.5vw;
-
                     @media screen and (max-width: 768px) {
                         line-height: normal;
                         font-size: 1.3rem;
@@ -327,7 +346,7 @@ html {
                         h5 {
                             font-size: 1.2rem;
                             color: $lightGrey;
-                            height: 20px;
+                            height: auto;
                             margin-bottom: 15px;
                             @media screen and (max-width: 768px) {
                                 height: auto;
@@ -337,13 +356,9 @@ html {
                         p {
                             font-size: 0.95rem;
                             color: #bbb;
-                            height: 80px;
+                            height: auto;
                             display: flex;
                             justify-content: center;
-                            align-items: center;
-                            @media screen and (max-width: 768px) {
-                                height: auto;
-                            }
                         }
                         @media screen and (max-width: 768px) {
                             padding-bottom: 0;
@@ -508,11 +523,13 @@ html {
                                 transform 0.3s ease,
                                 box-shadow 0.3s ease,
                                 background-color 0.5s ease;
-                            &:hover {
-                                transform: translateY(-5px);
-                                color: white;
-                                background-color: rgba(100, 255, 218, 0.1);
-                                box-shadow: 0px 8px 20px rgba(100, 255, 218, 0.1);
+                            @media screen and (min-width: 768px) {
+                                &:hover {
+                                    transform: translateY(-5px);
+                                    color: white;
+                                    background-color: rgba(100, 255, 218, 0.1);
+                                    box-shadow: 0px 8px 20px rgba(100, 255, 218, 0.1);
+                                }
                             }
                             @media screen and (max-width: 768px) {
                                 height: unset !important;
@@ -530,6 +547,8 @@ html {
                                 }
                                 & span {
                                     color: $neonGreen;
+                                    @media screen and (max-width: 768px) {
+                                    }
                                 }
                             }
                             .folder {
@@ -543,21 +562,6 @@ html {
                                         transform 0.4s ease;
                                     position: relative;
                                     margin-bottom: 10px;
-                                    &:nth-child(1) {
-                                        transition-delay: 0.1s;
-                                    }
-                                    &:nth-child(2) {
-                                        transition-delay: 0.2s;
-                                    }
-                                    &:nth-child(3) {
-                                        transition-delay: 0.3s;
-                                    }
-                                    &:nth-child(4) {
-                                        transition-delay: 0.4s;
-                                    }
-                                    &:nth-child(5) {
-                                        transition-delay: 0.5s;
-                                    }
                                     &::before {
                                         color: $neonGreen;
                                     }
@@ -647,7 +651,7 @@ html {
             }
         }
 
-        #about {
+        #a-propos {
             min-height: 40vh;
             @media screen and (max-width: 768px) {
                 padding-top: 40px;
@@ -788,7 +792,7 @@ html {
 
                         #contact_type {
                             display: flex;
-                            flex-direction: row;
+                            flex-direction: column;
                             gap: 10px;
                             width: 50%;
                             @media screen and (max-width: 768px) {
