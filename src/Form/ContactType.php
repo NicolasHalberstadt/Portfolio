@@ -61,6 +61,7 @@ class ContactType extends AbstractType
                 'choices' => [
                     'E-commerce' => 'e-commerce',
                     'Vitrine' => 'vitrine',
+                    'Projet personnalisé' => 'perso'
                 ],
                 'attr' => ['class' => 'form-label'],
                 'expanded' => true,
