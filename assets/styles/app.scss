@@ -579,6 +579,129 @@ html {
             }
         }
 
+        #sales {
+            background-color: $darkBlue;
+
+            .container {
+                h2 {
+                    font-size: 2.5rem;
+                    color: $neonGreen;
+                    font-family: "VT323", serif;
+                    margin-bottom: 40px;
+                }
+
+                .comparateur {
+                    h3 {
+                        font-size: 1.5rem;
+                        color: $lightGrey;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        color: $lightGrey;
+                        margin-bottom: 30px;
+                    }
+                    .sliders-toggle {
+                        cursor: pointer;
+                        color: $neonGreen;
+                    }
+                    #slidersContainer {
+                        display: none;
+                        .slider {
+                            margin-bottom: 30px;
+
+                            label {
+                                font-size: 1rem;
+                                color: $lightGrey;
+                            }
+
+                            #salesSlider {
+                                width: 100%;
+                                margin: 20px 0;
+                                background-color: #333;
+                            }
+
+                            #salesSliderValue {
+                                font-size: 1rem;
+                                color: $neonGreen;
+                            }
+                        }
+
+                        .average-sale {
+                            margin-bottom: 30px;
+
+                            label {
+                                font-size: 1rem;
+                                color: $lightGrey;
+                            }
+
+                            #averageSale {
+                                width: 100%;
+                                padding: 10px;
+                                font-size: 1rem;
+                                background-color: $darkerBlue;
+                                border: 1px solid $neonGreen;
+                                color: $neonGreen;
+                                border-radius: 6px;
+                                margin-top: 10px;
+                            }
+                        }
+
+                        table {
+                            width: 100%;
+                            border-collapse: collapse;
+                            margin-top: 40px;
+
+                            thead {
+                                tr {
+                                    th {
+                                        color: $neonGreen;
+                                        font-size: 1rem;
+                                        padding: 12px;
+                                        text-align: left;
+                                    }
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    background-color: $darkerBlue;
+                                    &:nth-child(even) {
+                                        background-color: #2c2f42;
+                                    }
+
+                                    td {
+                                        color: $lightGrey;
+                                        font-size: 1rem;
+                                        padding: 12px;
+                                        text-align: left;
+                                    }
+
+                                    .amount {
+                                        color: $neonGreen;
+                                    }
+
+                                    #etsyFee,
+                                    #shopifyFee,
+                                    #woocommerceFee {
+                                        font-weight: bold;
+                                    }
+
+                                    #etsyTotalFee,
+                                    #shopifyTotalFee,
+                                    #woocommerceTotalFee {
+                                        color: $neonGreen;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         #realisations {
             background-color: $darkerBlue;
             min-height: 50vh;

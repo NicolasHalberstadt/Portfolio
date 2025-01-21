@@ -364,114 +364,176 @@
 		</div>
 	</section>
 
-	<section id="realisations" class="w-100">
+	<section id="sales">
 		<div class="container">
-			<h2 class="number vt323">
-				<span class="neon-green">02.</span>
-				Réalisations
-			</h2>
-			<div class="projets">
-				<a target="_blank" href="https://mizoatelier.com" class="card mizoboutik">
-					<div class="card-img-top">
-						<img src="{{ asset('uploads/mizoboutik.png') }}" alt="Projet Mizoatelier">
-					</div>
-				</a>
-				<a target="_blank" href="https://mizoatelier.com" class="card mizoboutik">
-					<div class="card-body">
-						<h5 class="card-title">L'atelier Mizo</h5>
-						<p class="card-text">
-							Création d'une boutique en ligne avec WooCommerce : gestion des ventes en Europe, frais de livraison par zone, intégration Apple Pay, Google Pay et PayPal.
-						</p>
-					</div>
-				</a>
-			</div>
-		</div>
-	</section>
-
-	<section id="a-propos">
-		<div class="container">
-			<h2 class="number vt323">
-				<span class="neon-green">03.</span>
-				A propos de moi</h2>
-			<div class="d-block d-md-flex">
-				<div class="col-12 col-md-6 left-panel light-grey mb-4">
-					Après plusieurs années d’expérience dans le web, je me suis spécialisé dans la conception de sites internet. Mon travail vise à associer performance, ergonomie et esthétisme pour des réalisations qui se distinguent.
-					<br/>
-					<br/>
-					Mon ambition est de donner vie à vos idées en réalisant un site qui vous ressemble. Passionné par les défis, je cherche toujours des solutions innovantes pour répondre aux besoins spécifiques de chaque client.
-					<br/>
-					<a href="#contact">Contactez-moi</a>
-					pour échanger sur votre projet ou en savoir plus sur mes services !
-				</div>
-				<div class="col-12 col-md-6 right-panel">
-					<img src="{{ asset('uploads/me.png')}}" height="300" alt="Mon portrait">
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="contact">
-		<div class="container">
-			<h2 class="number vt323">
-				<span class="neon-green">04.</span>
-				Contact
-			</h2>
-			<div class="form-container">
-				{{ form_start(form, { 'attr': { 'id': 'contact-form', 'action': '/contact', 'method': 'POST', 'class': 'needs-validation', 'novalidate': 'novalidate' } }) }}
-				<div class="row">
-					<div class="col-12 col-md-6">
-						{{ form_row(form.firstname) }}
-						<div class="invalid-feedback">test</div>
-					</div>
-					<div class="col-12 col-md-6">
-						{{ form_row(form.lastname) }}
-						<div class="invalid-feedback">test</div>
-					</div>
-				</div>
-				{{ form_row(form.email) }}
-				<p class="m-0">{{ form_label(form.type) }}</p>
-				<div id="contact_type">
-					{% for choice in form.type %}
-						<div class="radio-item">
-							{{ form_widget(choice) }}
-							{{ form_label(choice) }}
+			<h2 class="">Prenez le contrôle de votre boutique en ligne avec un site personnalisé !</h2>
+			<div class="comparateur">
+				<h3>Pourquoi opter pour WooCommerce dans la gestion de vos ventes ?</h3>
+				<p>En choisissant l'offre E-Commerce, vous profitez de la flexibilité et de la puissance de WooCommerce, une extension idéale pour gérer facilement vos ventes sur WordPress.</p>
+				<h3>
+					Simulez vos frais en fonction de vos revenus
+					<span class="sliders-toggle">
+						<i class="fa-solid fa-chevron-down"></i>
+					</span>
+				</h3>
+				<div id="slidersContainer">
+					<div class="sliders row align-items-start">
+						<div class="slider col-12 col-md-6">
+							<label for="salesSlider">Revenus estimés (€) :</label>
+							<input type="range" class="sales-input" name="sales_value" id="salesSlider" min="0" max="5000" step="100" value="0">
+							<span id="salesSliderValue">0 €</span>
 						</div>
-					{% endfor %}
-				</div>
-				<div class="message">
-					{{ form_row(form.message) }}
-					<div id="charCount">
-						<span id="count">0</span>/50</div>
-				</div>
-				{{ form_row(form.submit) }}
-				{{ form_end(form) }}
-				<div id="loading">
-					<p>Envoi en cours</p>
-				</div>
-				<div id="successMessage">
-					<div class="message-container"></div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<footer id="footer" class="w-100">
-		<div class="container">
-			<div class="footer-top">
-				<h3 class="vt323">Merci de votre visite !</h3>
-			</div>
-			<div class="footer-content">
-				<div class="social-links">
-					<a href="https://www.linkedin.com/in/nicolashalberstadt" target="_blank" aria-label="LinkedIn">
-						<i class="fa-brands fa-linkedin"></i>
-					</a>
-					<a href="mailto:contact@nicolashalberstadt.com?subject=Demande de contact" aria-label="Email">
-						<i class="fas fa-envelope"></i>
-					</a>
+						<div class="average-sale col-12 col-md-6">
+							<label for="averageSale">Prix moyen par vente (€) :</label>
+							<input type="number" class="sales-input" id="averageSale" value="50" min="1" step="1">
+						</div>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Plateforme</th>
+								<th>Abonnement mensuel</th>
+								<th>Frais de transaction</th>
+								<th>Montant final</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Etsy</td>
+								<td>0€</td>
+								<td>
+									<span class="amount" id="etsyFee">0</span>€
+									<br>(6.5% + 4% + 0.30€/vente + 0.47€/article)
+								</td>
+								<td>
+									<span id="etsyRemaining">0</span>€</td>
+							</tr>
+							<tr>
+								<td>WooCommerce</td>
+								<td>0€</td>
+								<td>
+									<span class="amount" id="woocommerceFee">0</span>€
+									<br>(1.4% + 0.25€/vente)
+								</td>
+								<td>
+									<span id="woocommerceRemaining">0</span>€</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<p>&copy;
-					{{ "now"|date('Y') }}
-					Nicolas Halberstadt. Tous droits réservés.</p>
 			</div>
 		</div>
-	</footer>
-{% endblock %}
+	</div>
+</section>
+
+<section id="realisations" class="w-100">
+	<div class="container">
+		<h2 class="number vt323">
+			<span class="neon-green">02.</span>
+			Réalisations
+		</h2>
+		<div class="projets">
+			<a target="_blank" href="https://mizoatelier.com" class="card mizoboutik">
+				<div class="card-img-top">
+					<img src="{{ asset('uploads/mizoboutik.png') }}" alt="Projet Mizoatelier">
+				</div>
+			</a>
+			<a target="_blank" href="https://mizoatelier.com" class="card mizoboutik">
+				<div class="card-body">
+					<h5 class="card-title">L'atelier Mizo</h5>
+					<p class="card-text">
+						Création d'une boutique en ligne avec WooCommerce : gestion des ventes en Europe, frais de livraison par zone, intégration Apple Pay, Google Pay et PayPal.
+					</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+<section id="a-propos">
+	<div class="container">
+		<h2 class="number vt323">
+			<span class="neon-green">03.</span>
+			A propos de moi</h2>
+		<div class="d-block d-md-flex">
+			<div class="col-12 col-md-6 left-panel light-grey mb-4">
+				Après plusieurs années d’expérience dans le web, je me suis spécialisé dans la conception de sites internet. Mon travail vise à associer performance, ergonomie et esthétisme pour des réalisations qui se distinguent.
+				<br/>
+				<br/>
+				Mon ambition est de donner vie à vos idées en réalisant un site qui vous ressemble. Passionné par les défis, je cherche toujours des solutions innovantes pour répondre aux besoins spécifiques de chaque client.
+				<br/>
+				<a href="#contact">Contactez-moi</a>
+				pour échanger sur votre projet ou en savoir plus sur mes services !
+			</div>
+			<div class="col-12 col-md-6 right-panel">
+				<img src="{{ asset('uploads/me.png')}}" height="300" alt="Mon portrait">
+			</div>
+		</div>
+	</div>
+</section>
+<section id="contact">
+	<div class="container">
+		<h2 class="number vt323">
+			<span class="neon-green">04.</span>
+			Contact
+		</h2>
+		<div class="form-container">
+			{{ form_start(form, { 'attr': { 'id': 'contact-form', 'action': '/contact', 'method': 'POST', 'class': 'needs-validation', 'novalidate': 'novalidate' } }) }}
+			<div class="row">
+				<div class="col-12 col-md-6">
+					{{ form_row(form.firstname) }}
+					<div class="invalid-feedback">test</div>
+				</div>
+				<div class="col-12 col-md-6">
+					{{ form_row(form.lastname) }}
+					<div class="invalid-feedback">test</div>
+				</div>
+			</div>
+			{{ form_row(form.email) }}
+			<p class="m-0">{{ form_label(form.type) }}</p>
+			<div id="contact_type">
+				{% for choice in form.type %}
+					<div class="radio-item">
+						{{ form_widget(choice) }}
+						{{ form_label(choice) }}
+					</div>
+				{% endfor %}
+			</div>
+			<div class="message">
+				{{ form_row(form.message) }}
+				<div id="charCount">
+					<span id="count">0</span>/50</div>
+			</div>
+			{{ form_row(form.submit) }}
+			{{ form_end(form) }}
+			<div id="loading">
+				<p>Envoi en cours</p>
+			</div>
+			<div id="successMessage">
+				<div class="message-container"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer id="footer" class="w-100">
+	<div class="container">
+		<div class="footer-top">
+			<h3 class="vt323">Merci de votre visite !</h3>
+		</div>
+		<div class="footer-content">
+			<div class="social-links">
+				<a href="https://www.linkedin.com/in/nicolashalberstadt" target="_blank" aria-label="LinkedIn">
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+				<a href="mailto:contact@nicolashalberstadt.com?subject=Demande de contact" aria-label="Email">
+					<i class="fas fa-envelope"></i>
+				</a>
+			</div>
+			<p>&copy;
+				{{ "now"|date('Y') }}
+				Nicolas Halberstadt. Tous droits réservés.</p>
+		</div>
+	</div>
+</footer>{% endblock %}
