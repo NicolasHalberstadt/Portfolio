@@ -43,6 +43,9 @@ section {
     @media screen and (max-width: 768px) {
         padding: 60px 0;
     }
+    .container {
+        margin-top: 25px;
+    }
 }
 //\\ !Generic classes! //\\
 
@@ -293,6 +296,7 @@ html {
             }
         }
         #head {
+            margin-top: 0;
             background-color: $darkerBlue;
             width: 100%;
             min-height: 100vh;

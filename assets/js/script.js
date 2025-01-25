@@ -102,7 +102,7 @@ $(document).ready(function () {
 
                 gsap.to(this.DOM.flair, {
                     scale: 1,
-                    duration: 0.4,
+                    duration: 0.6,
                     ease: "power2.out"
                 });
             });
