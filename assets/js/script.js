@@ -221,24 +221,21 @@ $(document).ready(function () {
         let averageSale = parseFloat($('#averageSale').val()); // Prix moyen par vente
     
         let numItems = salesValue / averageSale; // Nombre d'articles vendus
-    
+
         // Affichage de la valeur du slider
         $('#salesSliderValue').text(salesValue.toFixed(0) + " €");
     
         // Calcul des frais Etsy (6.5% + 4% + 0.30€/vente + 0.47€/article)
         let etsyFee = salesValue * (6.5 / 100) + salesValue * (4 / 100) + 0.30 * numItems + 0.47 * numItems;
         $('#etsyFee').text(etsyFee.toFixed(2));
-        let etsyRemaining = salesValue - etsyFee;
-        $('#etsyRemaining').text(etsyRemaining.toFixed(2));
     
         // Calcul des frais WooCommerce (1.4% + 0.25€/vente)
         let woocommerceFee = salesValue * (1.4 / 100) + 0.25 * numItems;
         $('#woocommerceFee').text(woocommerceFee.toFixed(2));
-        let woocommerceRemaining = salesValue - woocommerceFee;
-        $('#woocommerceRemaining').text(woocommerceRemaining.toFixed(2));
     });
 
     $("#sales .sliders-toggle").on("click", function () {
+        console.log("click");
         $("#slidersContainer").toggle(300);
         if ($(this).find('i').hasClass('fa-chevron-up')) {
             $(this).html('<i class="fa-solid fa-chevron-down"></i>');

@@ -149,18 +149,16 @@ html {
                             visibility: hidden;
                             opacity: 0;
                             height: 0;
-                            box-shadow: 0px 70px 40px rgba(0, 0, 0, 0.5);
                             transition:
-                                visibility 0.3s ease-in-out,
-                                opacity 0s ease-in-out,
-                                height 0.3s ease-in-out;
+                                visibility 0.4s ease-in-out,
+                                opacity 0.3s ease-in-out;
                         }
                         &.show_list {
                             @media screen and (max-width: 768px) {
                                 visibility: visible;
                                 opacity: 1;
-                                height: auto;
-                                background-color: $darkerBlue;
+                                background-color: rgba(26, 29, 45, 0.9);
+                                height: 100vh;
                             }
                         }
                         ol {
@@ -168,9 +166,10 @@ html {
                             flex-direction: row;
                             margin: 0;
                             padding: 0;
+                            background-color: $darkerBlue;
                             @media screen and (max-width: 768px) {
                                 flex-direction: column;
-                                height: auto;
+                                // box-shadow: 0px 70px 40px rgba(100, 255, 218, 0.5);
                             }
 
                             li {
@@ -180,7 +179,7 @@ html {
                                     width: 100%;
                                     list-style: none !important;
                                     text-align: right;
-                                    padding: 0;
+                                    padding: 10px 0;
                                 }
                                 &::marker {
                                     color: $neonGreen;
@@ -479,9 +478,6 @@ html {
 
         #tarifs {
             min-height: 70vh;
-            @media screen and (max-width: 768px) {
-                margin-top: 100px;
-            }
             .tabs-switcher {
                 width: 100%;
                 display: flex;
@@ -585,7 +581,7 @@ html {
 
         #sales {
             background-color: $darkBlue;
-
+            padding-top: 0;
             .container {
                 h2 {
                     font-size: 2.5rem;
@@ -611,27 +607,30 @@ html {
                         color: $neonGreen;
                     }
                     #slidersContainer {
-                        display: none;
-                        .slider {
-                            margin-bottom: 30px;
-
-                            label {
-                                font-size: 1rem;
-                                color: $lightGrey;
+                        .sliders {
+                            @media screen and (max-width: 768px) {
+                                padding: 0 20px;
                             }
+                            .slider {
+                                margin-bottom: 30px;
 
-                            #salesSlider {
-                                width: 100%;
-                                margin: 20px 0;
-                                background-color: #333;
-                            }
+                                label {
+                                    font-size: 1rem;
+                                    color: $lightGrey;
+                                }
 
-                            #salesSliderValue {
-                                font-size: 1rem;
-                                color: $neonGreen;
+                                #salesSlider {
+                                    width: 100%;
+                                    margin: 20px 0;
+                                    background-color: #333;
+                                }
+
+                                #salesSliderValue {
+                                    font-size: 1rem;
+                                    color: $neonGreen;
+                                }
                             }
                         }
-
                         .average-sale {
                             margin-bottom: 30px;
 
@@ -664,6 +663,9 @@ html {
                                         font-size: 1rem;
                                         padding: 12px;
                                         text-align: left;
+                                        &:nth-child(2) {
+                                            text-align: right;
+                                        }
                                     }
                                 }
                             }
@@ -680,6 +682,9 @@ html {
                                         font-size: 1rem;
                                         padding: 12px;
                                         text-align: left;
+                                        &:nth-child(2) {
+                                            text-align: right;
+                                        }
                                     }
 
                                     .amount {
@@ -687,18 +692,15 @@ html {
                                     }
 
                                     #etsyFee,
-                                    #shopifyFee,
                                     #woocommerceFee {
                                         font-weight: bold;
                                     }
-
-                                    #etsyTotalFee,
-                                    #shopifyTotalFee,
-                                    #woocommerceTotalFee {
-                                        color: $neonGreen;
-                                        font-weight: bold;
-                                    }
                                 }
+                            }
+                        }
+                        .fees-details {
+                            svg {
+                                width: 20px;
                             }
                         }
                     }
@@ -830,7 +832,6 @@ html {
 
             .container {
                 @media screen and (max-width: 768px) {
-                    padding-top: 40px;
                     padding-bottom: 40px;
                 }
                 .form-container {
@@ -1220,5 +1221,16 @@ html {
     100% {
         transform: translate(-50%, -50%) scale(1);
         background-color: $neonGreen;
+    }
+}
+.pulse {
+    animation: pulse 0.8s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+    from {
+        transform: scale(0.95);
+    }
+    to {
+        transform: scale(1);
     }
 }

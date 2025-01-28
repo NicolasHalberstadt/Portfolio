@@ -4,10 +4,17 @@
 	<header>
 		<nav class="nav">
 			<div class="custom-container px-2 w-100">
-				<div class="logo">
-					<a href="#">
-						<img height="80" src="{{ asset('uploads/logo_sm.png')}}" alt="Logo Nicolas Halberstadt">
-					</a>
+				<div class="top-nav">
+					<div class="logo">
+						<a href="#">
+							<img height="80" src="{{ asset('uploads/logo_sm.png')}}" alt="Logo Nicolas Halberstadt">
+						</a>
+					</div>
+					<span class="nav-trigger">
+						<i></i>
+						<i></i>
+						<i></i>
+					</span>
 				</div>
 				<div class="main_list vt323">
 					<ol class="navlinks">
@@ -25,516 +32,530 @@
 						</li>
 					</ol>
 				</div>
-				<span class="nav-trigger">
-					<i></i>
-					<i></i>
-					<i></i>
-				</span>
 			</div>
 		</nav>
 	</header>
-	<section id="head">
-		<div class="container">
-			<div class="name">
-				<img src="{{asset('uploads/logo_xl.png') }}" alt="">
+	<div class="content">
+		<section id="head">
+			<div class="container">
+				<div class="name">
+					<img src="{{asset('uploads/logo_xl.png') }}" alt="">
+				</div>
+				<h1 class="title">Créateur de sites internet sur mesure dans toute la France</h1>
+				<div class="key-points row row-cols-2 row-cols-md-4 g-2">
+					<div class="point col">
+						<span class="icon">
+							<i class="fas fa-rocket"></i>
+						</span>
+						<h5>Livraison rapide</h5>
+						<p>Votre site en ligne dans les meilleurs délais, sans compromis sur la qualité.</p>
+					</div>
+					<div class="point col">
+						<span class="icon">
+							<i class="fas fa-wallet"></i>
+						</span>
+						<h5>Pas de coûts cachés</h5>
+						<p>Un tarif clair et transparent.</p>
+					</div>
+					<div class="point col">
+						<span class="icon">
+							<i class="fas fa-cogs"></i>
+						</span>
+						<h5>Gestion simplifiée</h5>
+						<p>Gérez vos contenus en toute autonomie grâce à une interface simple.</p>
+					</div>
+					<div class="point col">
+						<span class="icon">
+							<i class="fas fa-headset"></i>
+						</span>
+						<h5>Support 7/7</h5>
+						<p>Une assistance disponible à tout moment pour vous accompagner.</p>
+					</div>
+				</div>
+				<div class="row mt-5 justify-content-around">
+					<a href="#tarifs" class="col-11 col-md-5 button button--stroke vt232 contact-button mt-3" data-block="button">
+						<span class="button__flair"></span>
+						<span class="button__label">Consultez mes tarifs</span>
+					</a>
+					<a href="#contact" class="col-11 col-md-5 button button--stroke vt232 contact-button mt-3" data-block="button">
+						<span class="button__flair"></span>
+						<span class="button__label">Demandez un devis gratuit</span>
+					</a>
+				</div>
+				<div class="arrow">
+					<a href="#a-propos"></a>
+				</div>
 			</div>
-			<h1 class="title">Créateur de sites internet sur mesure dans toute la France</h1>
-			<div class="key-points row row-cols-2 row-cols-md-4 g-2">
-				<div class="point col">
-					<span class="icon">
-						<i class="fas fa-rocket"></i>
-					</span>
-					<h5>Livraison rapide</h5>
-					<p>Votre site en ligne dans les meilleurs délais, sans compromis sur la qualité.</p>
+		</section>
+
+		<section id="tarifs">
+			<div class="container">
+				<h2 class="number vt323">
+					<span class="neon-green">01.</span>
+					Tarifs
+				</h2>
+				<div class="tabs-switcher mt-4">
+					<button id="vitrine" class="active">Site vitrine</button>
+					<button id="commerce">Site E-Commerce</button>
 				</div>
-				<div class="point col">
-					<span class="icon">
-						<i class="fas fa-wallet"></i>
-					</span>
-					<h5>Pas de coûts cachés</h5>
-					<p>Un tarif clair et transparent.</p>
-				</div>
-				<div class="point col">
-					<span class="icon">
-						<i class="fas fa-cogs"></i>
-					</span>
-					<h5>Gestion simplifiée</h5>
-					<p>Gérez vos contenus en toute autonomie grâce à une interface simple.</p>
-				</div>
-				<div class="point col">
-					<span class="icon">
-						<i class="fas fa-headset"></i>
-					</span>
-					<h5>Support 7/7</h5>
-					<p>Une assistance disponible à tout moment pour vous accompagner.</p>
+				<div
+					class="tabs">
+					<!-- Site vitrine -->
+					<div class="tab vitrine active" id="vitrine">
+						<div class="row row-cols-1 mt-2 g-2 g-md-4">
+							<div class="col">
+								<div class="card h-100 text-center">
+									<p>
+										Un site vitrine complet et conçu sur mesure pour refléter l’identité de votre activité.
+										<br>
+										Parfait pour mettre en avant vos services, vos valeurs et faciliter le contact avec vos clients.
+									</p>
+									<h3 class="text-center d-block neon-green">À partir de 1700€</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="row row-cols-1 mt-2 mt-md-0 g-2 g-md-4">
+							<div class="col">
+								<div class="card h-100 fold-btn" id="vitrineProcess">
+									<h3>Le processus de création
+										<span class="d-inline-block mx-3 d-md-none">
+											<i class="fa-solid fa-chevron-down"></i>
+										</span>
+									</h3>
+									<ul class="my-2 vitrineProcess folder">
+										<li>
+											<strong>Échange sur vos besoins et objectifs</strong>
+										</li>
+										<li>
+											<strong>Conception du design et intégration des contenus</strong>
+										</li>
+										<li>
+											<strong>Révisions et ajustements</strong>
+										</li>
+										<li>
+											<strong>Mise en ligne du site</strong>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
+							<div class="col">
+								<div class="card h-100 fold-btn" id="vitrinePrices">
+									<h3>Ce prix comprend
+										<span class="d-inline-block mx-3 d-md-none">
+											<i class="fa-solid fa-chevron-down"></i>
+										</span>
+									</h3>
+									<ul class="my-2 vitrinePrices folder">
+										<li>Un accompagnement pour choisir et acheter votre nom de domaine et hébergement</li>
+										<li>Un design adapté à tous les écrans et optimisé pour le référencement (SEO)</li>
+										<li>Une adresse e-mail professionnelle (@votreentreprise.com)</li>
+										<li>Une structure comprenant jusqu’à 4 pages</li>
+										<li>Vos contenus parfaitement intégrés : textes, images, logo, etc.</li>
+										<li>Un site rapide et une configuration complète</li>
+										<li>Une formation d'1h à l'utilisation de votre site</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card h-100 fold-btn" id="vitrineOptions">
+									<h3>
+										Options supplémentaires
+										<span class="d-inline-block mx-3 d-md-none">
+											<i class="fa-solid fa-chevron-down"></i>
+										</span>
+									</h3>
+									<ul class="my-2 vitrineOptions folder">
+										<li>
+											Configuration d’adresses e-mail professionnelles supplémentaire
+											<strong>(+ 30€ TTC par adresse)</strong>
+										</li>
+										<li>
+											Suivi analytique et rapports personnalisés
+											<strong>(+ 150€ TTC)</strong>
+										</li>
+										<li>
+											Mise en place de mesures de sécurité avancées (SSL, protection contre les attaques)
+											<strong>(+ 200€ TTC)</strong>
+										</li>
+										<li>
+											Site bilingue Français - Anglais
+											<strong>(+ 150€ TTC)</strong>
+										</li>
+										<li>
+											Création d’un blog intégré
+											<strong>(+ 200€ TTC)</strong>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
+							<div class="col">
+								<div class="card h-100 fold-btn" id="vitrineSAV">
+									<h3>Service après vente
+										<span class="d-inline-block mx-3 d-md-none">
+											<i class="fa-solid fa-chevron-down"></i>
+										</span>
+									</h3>
+									<div class="my-2 folder vitrineSAV">
+										<p>Accompagnement gratuit pendant le premier mois après la mise en ligne. Les modifications supplémentaires seront facturées à
+											<strong>50€ TTC/heure</strong>
+											après cette période.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card h-100 fold-btn" id="vitrinePayment">
+									<h3>Conditions de paiement
+										<span class="d-inline-block mx-3 d-md-none">
+											<i class="fa-solid fa-chevron-down"></i>
+										</span>
+									</h3>
+									<div class="my-2 folder vitrinePayment">
+										<p>
+											<strong>Acompte de 30%</strong>
+											demandé à la signature du contrat.
+											<strong>Le solde de 70%</strong>
+											est dû à la livraison du site.</p>
+										<p>
+											<em>Possibilité d'échelonner chaque paiement en
+												<strong>4 fois sans frais</strong>
+												avec PayPal&#169;</em>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- ################### Site E-Commerce ################### -->
+					<div class="tab e-commerce" id="commerce">
+						<div class="row row-cols-1 mt-2 g-2 g-md-4">
+							<div class="col">
+								<div class="card h-100 text-center">
+									<p>
+										Un site e-commerce performant, pensé pour simplifier la gestion de vos produits et offrir une expérience d’achat fluide.<br>
+										Une solution idéale pour développer vos ventes en ligne et toucher un public plus large.
+									</p>
+									<h3 class="neon-green">À partir de 2500€</h3>
+								</div>
+							</div>
+						</div>
+						<div class="row row-cols-1 mt-2 mt-md-0 g-2 g-md-4">
+							<div class="col">
+								<div class="card h-100 fold-btn" id="ecomProcess">
+									<h3>Le processus de création
+										<span class="d-inline-block mx-3 d-md-none">
+											<i class="fa-solid fa-chevron-down"></i>
+										</span>
+									</h3>
+									<ul class="my-2 folder ecomProcess">
+										<li>
+											<strong>Échange sur vos besoins et objectifs</strong>
+										</li>
+										<li>
+											<strong>Conception du design et intégration des contenus</strong>
+										</li>
+										<li>
+											<strong>Révisions et ajustements</strong>
+										</li>
+										<li>
+											<strong>Mise en ligne du site</strong>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
+							<div class="col">
+								<div class="card h-100 fold-btn" id="ecomPrices">
+									<h3>Ce prix comprend
+										<span class="d-inline-block mx-3 d-md-none">
+											<i class="fa-solid fa-chevron-down"></i>
+										</span>
+									</h3>
+									<ul class="my-2 folder ecomPrices">
+										<li>Un accompagnement pour choisir et acheter votre nom de domaine et hébergement</li>
+										<li>Un design adapté à tous les écrans et optimisé pour le référencement (SEO)</li>
+										<li>3 adresses e-mail professionnelles (@votreentreprise.com)</li>
+										<li>Une structure comprenant jusqu’à 6 pages</li>
+										<li>Vos contenus parfaitement intégrés : textes, images, logo, etc</li>
+										<li>30 fiches produits</li>
+										<li>Un site rapide et une configuration e-commerce complète</li>
+										<li>Une formation de 2h à l'utilisation de votre site</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card h-100 fold-btn" id="ecomOptions">
+									<h3>Options supplémentaires
+										<span class="d-inline-block mx-3 d-md-none">
+											<i class="fa-solid fa-chevron-down"></i>
+										</span>
+									</h3>
+									<ul class="my-2 folder ecomOptions">
+										<li>
+											Configuration d’adresses e-mail professionnelles supplémentaire
+											<strong>(+ 30€ TTC par adresse)</strong>
+										</li>
+										<li>
+											Suivi analytique et rapports personnalisés
+											<strong>(+ 150€ TTC)</strong>
+										</li>
+										<li>
+											Mise en place de mesures de sécurité avancées (SSL, protection contre les attaques)
+											<strong>(+ 200€ TTC)</strong>
+										</li>
+										<li>
+											Site bilingue Français - Anglais
+											<strong>(+ 150€ TTC)</strong>
+										</li>
+										<li>
+											Création d’un blog intégré
+											<strong>(+ 200€ TTC)</strong>
+										</li>
+										<li>
+											50 produits supplémentaires
+											<strong>(+ 200€ TTC)</strong>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
+							<div class="col">
+								<div class="card h-100 fold-btn" id="ecomSAV">
+									<h3>Service après vente
+										<span class="d-inline-block mx-3 d-md-none">
+											<i class="fa-solid fa-chevron-down"></i>
+										</span>
+									</h3>
+									<div class="my-2 folder ecomSAV">
+										<p>Accompagnement gratuit pendant les 2 premiers mois après la mise en ligne. Les modifications supplémentaires seront facturées à
+											<strong>50€ TTC/heure</strong>
+											après cette période.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card h-100 fold-btn" id="ecomPayment">
+									<h3>Conditions de paiement
+										<span class="d-inline-block mx-3 d-md-none">
+											<i class="fa-solid fa-chevron-down"></i>
+										</span>
+									</h3>
+									<div class="my-2 folder ecomPayment">
+										<p>
+											<strong>Acompte de 30%</strong>
+											demandé à la signature du contrat.
+											<strong>Le solde de 70%</strong>
+											est dû à la livraison du site.</p>
+										<p>
+											<em>Possibilité d'échelonner chaque paiement en
+												<strong>4 fois sans frais</strong>
+												avec PayPal&#169;</em>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="row mt-5 justify-content-around">
-				<a href="#tarifs" class="col-11 col-md-5 button button--stroke vt232 contact-button mt-3" data-block="button">
-					<span class="button__flair"></span>
-					<span class="button__label">Consultez mes tarifs</span>
-				</a>
-				<a href="#contact" class="col-11 col-md-5 button button--stroke vt232 contact-button mt-3" data-block="button">
-					<span class="button__flair"></span>
-					<span class="button__label">Demandez un devis gratuit</span>
-				</a>
-			</div>
-			<div class="arrow">
-				<a href="#a-propos"></a>
+		</section>
+
+		<section id="sales">
+			<div class="container">
+				<h2 class="">Prenez le contrôle de votre boutique en ligne avec un site personnalisé !</h2>
+				<div class="comparateur">
+					<h3>Pourquoi opter pour WooCommerce dans la gestion de vos ventes ?</h3>
+					<p>En choisissant l'offre E-Commerce, vous profitez de la flexibilité et de la puissance de WooCommerce, une extension idéale pour gérer facilement vos ventes sur WordPress.</p>
+					<h3>
+						Simulez vos frais en fonction de vos revenus
+						<span class="sliders-toggle">
+							<i class="fa-solid fa-chevron-down"></i>
+						</span>
+					</h3>
+					<div id="slidersContainer">
+						<div class="sliders row align-items-start">
+							<div class="slider col-12 col-md-6">
+								<label for="salesSlider">Revenus estimés (€) :</label>
+								<input type="range" class="sales-input" name="sales_value" id="salesSlider" min="0" max="5000" step="100" value="0">
+								<span id="salesSliderValue">0 €</span>
+							</div>
+							<div class="average-sale col-12 col-md-6">
+								<label for="averageSale">Prix moyen par vente (€) :</label>
+								<input type="number" class="sales-input" id="averageSale" value="50" min="1" step="1">
+							</div>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<th>Plateforme</th>
+									<th>Frais de transaction</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Etsy</td>
+									<td>
+										<span class="amount" id="etsyFee">0</span>€
+									</td>
+								</tr>
+								<tr>
+									<td>WooCommerce</td>
+									<td>
+										<span class="amount" id="woocommerceFee">0</span>€
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="fees-details mt-3">
+							<div>
+								<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 24">
+									<path d="M6.547,3.125v6.008c0,0,2.117,0,3.25-0.086c0.891-0.156,1.055-0.242,1.219-1.133l0.328-1.305h0.969l-0.164,2.852 l0.086,2.922h-0.977l-0.242-1.141c-0.242-0.812-0.57-0.977-1.219-1.055c-0.812-0.086-3.25-0.086-3.25-0.086v5.039 c0,0.969,0.492,1.383,1.625,1.383h3.414c1.055,0,2.109-0.086,2.766-1.625l0.883-1.953h0.82c-0.086,0.406-0.492,3.984-0.57,4.789 c0,0-3.086-0.078-4.383-0.078H5.25l-3.492,0.078v-0.883l1.133-0.25c0.82-0.164,1.062-0.406,1.062-1.055 c0,0,0.086-2.195,0.086-5.852c0-3.648-0.086-5.844-0.086-5.844c0-0.727-0.242-0.891-1.062-1.055L1.758,2.555V1.664l3.414,0.07h6.5 c1.297,0,3.484-0.234,3.484-0.234s-0.078,1.375-0.164,4.625h-0.891l-0.328-1.141c-0.32-1.461-0.805-2.188-1.703-2.188H6.961 C6.547,2.797,6.547,2.875,6.547,3.125z M19.703,3.766h0.977V7.18l3.336-0.164l-0.164,1.547l-3.25-0.25v6.016 c0,1.703,0.57,2.359,1.547,2.359c0.883,0,1.539-0.492,1.781-0.898l0.484,0.57c-0.484,1.133-1.859,1.703-3.164,1.703 c-1.617,0-2.93-0.969-2.93-2.836V8.398h-1.938V7.586C18.008,7.422,19.219,6.445,19.703,3.766z M26.695,14.242l0.648,1.547 c0.242,0.648,0.812,1.305,2.109,1.305c1.383,0,1.953-0.734,1.953-1.625c0-2.766-5.445-1.953-5.445-5.688c0-2.109,1.703-3.094,3.898-3.094c0.977,0,2.438,0.164,3.172,0.492c-0.164,0.812-0.25,1.867-0.25,2.68l-0.805,0.078l-0.57-1.625 c-0.164-0.398-0.82-0.727-1.625-0.727c-0.977,0-1.953,0.406-1.953,1.461c0,2.516,5.609,1.953,5.609,5.688c0,2.117-1.867,3.25-4.148,3.25c-1.703,0-3.414-0.656-3.414-0.656c0.164-0.969,0.086-2.023,0-3.086H26.695z M33.031,22.039 c0.242-0.891,0.406-2.023,0.57-3.086l0.891-0.078l0.328,1.703c0.078,0.406,0.32,0.734,0.969,0.734c1.055,0,2.438-0.648,3.742-2.922 c-0.578-1.383-2.281-5.844-3.828-9.258c-0.406-0.898-0.484-0.977-1.047-1.141l-0.414-0.156v-0.82l2.445,0.086l3-0.164V7.75 l-0.734,0.164c-0.57,0.078-0.805,0.398-0.805,0.727c0,0.086,0,0.164,0.078,0.328c0.156,0.492,1.461,4.141,2.438,6.578c0.805-1.703,2.352-5.523,2.594-6.172c0.086-0.328,0.164-0.406,0.164-0.648c0-0.414-0.242-0.656-0.805-0.812L42.039,7.75V6.938 l2.281,0.078l2.109-0.078V7.75l-0.406,0.32c-0.812,0.328-0.898,0.406-1.219,1.062l-3.57,8.359 c-2.117,4.797-4.312,5.203-5.852,5.203C34.406,22.695,33.672,22.445,33.031,22.039z" fill="#f45800"/>
+								</svg>
+								6.5% + 4% + 0.30€/vente + 0.47€/article
+							</div>
+							<div>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" preserveaspectratio="xMidYMid" version="1.1" viewbox="0 0 256 153">
+									<title>WooCommerce Logo</title>
+									<metadata>
+										<rdf:RDF>
+											<cc:Work rdf:about="">
+												<dc:format>image/svg+xml</dc:format>
+												<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+												<dc:title/>
+											</cc:Work>
+										</rdf:RDF>
+									</metadata>
+									<path d="m23.759 0h208.38c13.187 0 23.863 10.675 23.863 23.863v79.542c0 13.187-10.675 23.863-23.863 23.863h-74.727l10.257 25.118-45.109-25.118h-98.695c-13.187 0-23.863-10.675-23.863-23.863v-79.542c-0.10466-13.083 10.571-23.863 23.758-23.863z" fill="#7f54b3"/>
+									<path d="m14.578 21.75c1.4569-1.9772 3.6423-3.0179 6.5561-3.226 5.3073-0.41626 8.3252 2.0813 9.0537 7.4927 3.226 21.75 6.7642 40.169 10.511 55.259l22.79-43.395c2.0813-3.9545 4.6829-6.0358 7.8049-6.2439 4.5789-0.3122 7.3886 2.6016 8.5333 8.7415 2.6016 13.841 5.9317 25.6 9.8862 35.59 2.7057-26.433 7.2846-45.476 13.737-57.236 1.561-2.9138 3.8504-4.3707 6.8683-4.5789 2.3935-0.20813 4.5789 0.52033 6.5561 2.0813 1.9772 1.561 3.0179 3.5382 3.226 5.9317 0.10406 1.8732-0.20813 3.4341-1.0407 4.9951-4.0585 7.4927-7.3886 20.085-10.094 37.567-2.6016 16.963-3.5382 30.179-2.9138 39.649 0.20813 2.6016-0.20813 4.8911-1.2488 6.8683-1.2488 2.2894-3.122 3.5382-5.5154 3.7463-2.7057 0.20813-5.5154-1.0406-8.2211-3.8504-9.678-9.8862-17.379-24.663-22.998-44.332-6.7642 13.32-11.759 23.311-14.985 29.971-6.1398 11.759-11.343 17.795-15.714 18.107-2.8098 0.20813-5.2033-2.1854-7.2846-7.1805-5.3073-13.633-11.031-39.961-17.171-78.985-0.41626-2.7057 0.20813-5.0992 1.665-6.9724zm223.64 16.338c-3.7463-6.5561-9.2618-10.511-16.65-12.072-1.9772-0.41626-3.8504-0.62439-5.6195-0.62439-9.9902 0-18.107 5.2033-24.455 15.61-5.4114 8.8455-8.1171 18.628-8.1171 29.346 0 8.013 1.665 14.881 4.9951 20.605 3.7463 6.5561 9.2618 10.511 16.65 12.072 1.9772 0.41626 3.8504 0.62439 5.6195 0.62439 10.094 0 18.211-5.2033 24.455-15.61 5.4114-8.9496 8.1171-18.732 8.1171-29.45 0.10406-8.1171-1.665-14.881-4.9951-20.501zm-13.112 28.826c-1.4569 6.8683-4.0585 11.967-7.9089 15.402-3.0179 2.7057-5.8276 3.8504-8.4293 3.3301-2.4976-0.52033-4.5789-2.7057-6.1398-6.7642-1.2488-3.226-1.8732-6.452-1.8732-9.4699 0-2.6016 0.20813-5.2033 0.72846-7.5967 0.93659-4.2667 2.7057-8.4293 5.5154-12.384 3.4341-5.0992 7.0764-7.1805 10.823-6.452 2.4976 0.52033 4.5789 2.7057 6.1398 6.7642 1.2488 3.226 1.8732 6.452 1.8732 9.4699 0 2.7057-0.20813 5.3073-0.72846 7.7008zm-52.033-28.826c-3.7463-6.5561-9.3659-10.511-16.65-12.072-1.9772-0.41626-3.8504-0.62439-5.6195-0.62439-9.9902 0-18.107 5.2033-24.455 15.61-5.4114 8.8455-8.1171 18.628-8.1171 29.346 0 8.013 1.665 14.881 4.9951 20.605 3.7463 6.5561 9.2618 10.511 16.65 12.072 1.9772 0.41626 3.8504 0.62439 5.6195 0.62439 10.094 0 18.211-5.2033 24.455-15.61 5.4114-8.9496 8.1171-18.732 8.1171-29.45 0-8.1171-1.665-14.881-4.9951-20.501zm-13.216 28.826c-1.4569 6.8683-4.0585 11.967-7.9089 15.402-3.0179 2.7057-5.8276 3.8504-8.4293 3.3301-2.4976-0.52033-4.5789-2.7057-6.1398-6.7642-1.2488-3.226-1.8732-6.452-1.8732-9.4699 0-2.6016 0.20813-5.2033 0.72846-7.5967 0.93658-4.2667 2.7057-8.4293 5.5154-12.384 3.4341-5.0992 7.0764-7.1805 10.823-6.452 2.4976 0.52033 4.5789 2.7057 6.1398 6.7642 1.2488 3.226 1.8732 6.452 1.8732 9.4699 0.10406 2.7057-0.20813 5.3073-0.72846 7.7008z" fill="#fff"/>
+								</svg>
+								1.4% + 0.25€/vente
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="tarifs">
+	<section id="realisations" class="w-100">
 		<div class="container">
 			<h2 class="number vt323">
-				<span class="neon-green">01.</span>
-				Tarifs
+				<span class="neon-green">02.</span>
+				Réalisations
 			</h2>
-			<div class="tabs-switcher mt-4">
-				<button id="vitrine" class="active">Site vitrine</button>
-				<button id="commerce">Site E-Commerce</button>
+			<div class="projets">
+				<a target="_blank" href="https://mizoatelier.com" class="card mizoboutik pulse">
+					<div class="card-img-top">
+						<img src="{{ asset('uploads/mizoboutik.png') }}" alt="Projet Mizoatelier">
+					</div>
+				</a>
+				<a target="_blank" href="https://mizoatelier.com" class="card mizoboutik">
+					<div class="card-body">
+						<h5 class="card-title">L'atelier Mizo</h5>
+						<p class="card-text">
+							Création d'une boutique en ligne avec WooCommerce : gestion des ventes en Europe, frais de livraison par zone, intégration Apple Pay, Google Pay et PayPal.
+						</p>
+					</div>
+				</a>
 			</div>
-			<div
-				class="tabs">
-				<!-- Site vitrine -->
-				<div class="tab vitrine active" id="vitrine">
-					<div class="row row-cols-1 mt-2 g-2 g-md-4">
-						<div class="col">
-							<div class="card h-100 text-center">
-								<p>
-									Un site vitrine complet et conçu sur mesure pour refléter l’identité de votre activité.
-									<br>
-									Parfait pour mettre en avant vos services, vos valeurs et faciliter le contact avec vos clients.
-								</p>
-								<h3 class="text-center d-block neon-green">À partir de 1700€</h3>
-							</div>
-						</div>
-					</div>
+		</div>
+	</section>
 
-					<div class="row row-cols-1 mt-2 mt-md-0 g-2 g-md-4">
-						<div class="col">
-							<div class="card h-100 fold-btn" id="vitrineProcess">
-								<h3>Le processus de création
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<ul class="my-2 vitrineProcess folder">
-									<li>
-										<strong>Échange sur vos besoins et objectifs</strong>
-									</li>
-									<li>
-										<strong>Conception du design et intégration des contenus</strong>
-									</li>
-									<li>
-										<strong>Révisions et ajustements</strong>
-									</li>
-									<li>
-										<strong>Mise en ligne du site</strong>
-									</li>
-								</ul>
-							</div>
-						</div>
+	<section id="a-propos">
+		<div class="container">
+			<h2 class="number vt323">
+				<span class="neon-green">03.</span>
+				A propos de moi</h2>
+			<div class="d-block d-md-flex">
+				<div class="col-12 col-md-6 left-panel light-grey mb-4">
+					Après plusieurs années d’expérience dans le web, je me suis spécialisé dans la conception de sites internet. Mon travail vise à associer performance, ergonomie et esthétisme pour des réalisations qui se distinguent.
+					<br/>
+					<br/>
+					Mon ambition est de donner vie à vos idées en réalisant un site qui vous ressemble. Passionné par les défis, je cherche toujours des solutions innovantes pour répondre aux besoins spécifiques de chaque client.
+					<br/>
+					<a href="#contact">Contactez-moi</a>
+					pour échanger sur votre projet ou en savoir plus sur mes services !
+				</div>
+				<div class="col-12 col-md-6 right-panel">
+					<img src="{{ asset('uploads/me.png')}}" height="300" alt="Mon portrait">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact">
+		<div class="container">
+			<h2 class="number vt323">
+				<span class="neon-green">04.</span>
+				Contact
+			</h2>
+			<div class="form-container">
+				{{ form_start(form, { 'attr': { 'id': 'contact-form', 'action': '/contact', 'method': 'POST', 'class': 'needs-validation', 'novalidate': 'novalidate' } }) }}
+				<div class="row">
+					<div class="col-12 col-md-6">
+						{{ form_row(form.firstname) }}
+						<div class="invalid-feedback">test</div>
 					</div>
-
-					<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
-						<div class="col">
-							<div class="card h-100 fold-btn" id="vitrinePrices">
-								<h3>Ce prix comprend
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<ul class="my-2 vitrinePrices folder">
-									<li>Un accompagnement pour choisir et acheter votre nom de domaine et hébergement</li>
-									<li>Un design adapté à tous les écrans et optimisé pour le référencement (SEO)</li>
-									<li>Une adresse e-mail professionnelle (@votreentreprise.com)</li>
-									<li>Une structure comprenant jusqu’à 4 pages</li>
-									<li>Vos contenus parfaitement intégrés : textes, images, logo, etc.</li>
-									<li>Un site rapide et une configuration complète</li>
-									<li>Une formation d'1h à l'utilisation de votre site</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card h-100 fold-btn" id="vitrineOptions">
-								<h3>
-									Options supplémentaires
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<ul class="my-2 vitrineOptions folder">
-									<li>
-										Configuration d’adresses e-mail professionnelles supplémentaire
-										<strong>(+ 30€ TTC par adresse)</strong>
-									</li>
-									<li>
-										Suivi analytique et rapports personnalisés
-										<strong>(+ 150€ TTC)</strong>
-									</li>
-									<li>
-										Mise en place de mesures de sécurité avancées (SSL, protection contre les attaques)
-										<strong>(+ 200€ TTC)</strong>
-									</li>
-									<li>
-										Site bilingue Français - Anglais
-										<strong>(+ 150€ TTC)</strong>
-									</li>
-									<li>
-										Création d’un blog intégré
-										<strong>(+ 200€ TTC)</strong>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
-						<div class="col">
-							<div class="card h-100 fold-btn" id="vitrineSAV">
-								<h3>Service après vente
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<div class="my-2 folder vitrineSAV">
-									<p>Accompagnement gratuit pendant le premier mois après la mise en ligne. Les modifications supplémentaires seront facturées à
-										<strong>50€ TTC/heure</strong>
-										après cette période.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card h-100 fold-btn" id="vitrinePayment">
-								<h3>Conditions de paiement
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<div class="my-2 folder vitrinePayment">
-									<p>
-										<strong>Acompte de 30%</strong>
-										demandé à la signature du contrat.
-										<strong>Le solde de 70%</strong>
-										est dû à la livraison du site.</p>
-									<p>
-										<em>Possibilité d'échelonner chaque paiement en
-											<strong>4 fois sans frais</strong>
-											avec PayPal&#169;</em>
-									</p>
-								</div>
-							</div>
-						</div>
+					<div class="col-12 col-md-6">
+						{{ form_row(form.lastname) }}
+						<div class="invalid-feedback">test</div>
 					</div>
 				</div>
-
-				<!-- ################### Site E-Commerce ################### -->
-				<div class="tab e-commerce" id="commerce">
-					<div class="row row-cols-1 mt-2 g-2 g-md-4">
-						<div class="col">
-							<div class="card h-100 text-center">
-								<p>
-									Un site e-commerce performant, pensé pour simplifier la gestion de vos produits et offrir une expérience d’achat fluide.<br>
-									Une solution idéale pour développer vos ventes en ligne et toucher un public plus large.
-								</p>
-								<h3 class="neon-green">À partir de 2500€</h3>
-							</div>
+				{{ form_row(form.email) }}
+				<p class="m-0">{{ form_label(form.type) }}</p>
+				<div id="contact_type">
+					{% for choice in form.type %}
+						<div class="radio-item">
+							{{ form_widget(choice) }}
+							{{ form_label(choice) }}
 						</div>
-					</div>
-					<div class="row row-cols-1 mt-2 mt-md-0 g-2 g-md-4">
-						<div class="col">
-							<div class="card h-100 fold-btn" id="ecomProcess">
-								<h3>Le processus de création
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<ul class="my-2 folder ecomProcess">
-									<li>
-										<strong>Échange sur vos besoins et objectifs</strong>
-									</li>
-									<li>
-										<strong>Conception du design et intégration des contenus</strong>
-									</li>
-									<li>
-										<strong>Révisions et ajustements</strong>
-									</li>
-									<li>
-										<strong>Mise en ligne du site</strong>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
-						<div class="col">
-							<div class="card h-100 fold-btn" id="ecomPrices">
-								<h3>Ce prix comprend
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<ul class="my-2 folder ecomPrices">
-									<li>Un accompagnement pour choisir et acheter votre nom de domaine et hébergement</li>
-									<li>Un design adapté à tous les écrans et optimisé pour le référencement (SEO)</li>
-									<li>3 adresses e-mail professionnelles (@votreentreprise.com)</li>
-									<li>Une structure comprenant jusqu’à 6 pages</li>
-									<li>Vos contenus parfaitement intégrés : textes, images, logo, etc</li>
-									<li>30 fiches produits</li>
-									<li>Un site rapide et une configuration e-commerce complète</li>
-									<li>Une formation de 2h à l'utilisation de votre site</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card h-100 fold-btn" id="ecomOptions">
-								<h3>Options supplémentaires
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<ul class="my-2 folder ecomOptions">
-									<li>
-										Configuration d’adresses e-mail professionnelles supplémentaire
-										<strong>(+ 30€ TTC par adresse)</strong>
-									</li>
-									<li>
-										Suivi analytique et rapports personnalisés
-										<strong>(+ 150€ TTC)</strong>
-									</li>
-									<li>
-										Mise en place de mesures de sécurité avancées (SSL, protection contre les attaques)
-										<strong>(+ 200€ TTC)</strong>
-									</li>
-									<li>
-										Site bilingue Français - Anglais
-										<strong>(+ 150€ TTC)</strong>
-									</li>
-									<li>
-										Création d’un blog intégré
-										<strong>(+ 200€ TTC)</strong>
-									</li>
-									<li>
-										50 produits supplémentaires
-										<strong>(+ 200€ TTC)</strong>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="row row-cols-1 mt-2 mt-md-0 row-cols-md-2 g-2 g-md-4">
-						<div class="col">
-							<div class="card h-100 fold-btn" id="ecomSAV">
-								<h3>Service après vente
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<div class="my-2 folder ecomSAV">
-									<p>Accompagnement gratuit pendant les 2 premiers mois après la mise en ligne. Les modifications supplémentaires seront facturées à
-										<strong>50€ TTC/heure</strong>
-										après cette période.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card h-100 fold-btn" id="ecomPayment">
-								<h3>Conditions de paiement
-									<span class="d-inline-block mx-3 d-md-none">
-										<i class="fa-solid fa-chevron-down"></i>
-									</span>
-								</h3>
-								<div class="my-2 folder ecomPayment">
-									<p>
-										<strong>Acompte de 30%</strong>
-										demandé à la signature du contrat.
-										<strong>Le solde de 70%</strong>
-										est dû à la livraison du site.</p>
-									<p>
-										<em>Possibilité d'échelonner chaque paiement en
-											<strong>4 fois sans frais</strong>
-											avec PayPal&#169;</em>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+					{% endfor %}
+				</div>
+				<div class="message">
+					{{ form_row(form.message) }}
+					<div id="charCount">
+						<span id="count">0</span>/50</div>
+				</div>
+				{{ form_row(form.submit) }}
+				{{ form_end(form) }}
+				<div id="loading">
+					<p>Envoi en cours</p>
+				</div>
+				<div id="successMessage">
+					<div class="message-container"></div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="sales">
+	<footer id="footer" class="w-100">
 		<div class="container">
-			<h2 class="">Prenez le contrôle de votre boutique en ligne avec un site personnalisé !</h2>
-			<div class="comparateur">
-				<h3>Pourquoi opter pour WooCommerce dans la gestion de vos ventes ?</h3>
-				<p>En choisissant l'offre E-Commerce, vous profitez de la flexibilité et de la puissance de WooCommerce, une extension idéale pour gérer facilement vos ventes sur WordPress.</p>
-				<h3>
-					Simulez vos frais en fonction de vos revenus
-					<span class="sliders-toggle">
-						<i class="fa-solid fa-chevron-down"></i>
-					</span>
-				</h3>
-				<div id="slidersContainer">
-					<div class="sliders row align-items-start">
-						<div class="slider col-12 col-md-6">
-							<label for="salesSlider">Revenus estimés (€) :</label>
-							<input type="range" class="sales-input" name="sales_value" id="salesSlider" min="0" max="5000" step="100" value="0">
-							<span id="salesSliderValue">0 €</span>
-						</div>
-
-						<div class="average-sale col-12 col-md-6">
-							<label for="averageSale">Prix moyen par vente (€) :</label>
-							<input type="number" class="sales-input" id="averageSale" value="50" min="1" step="1">
-						</div>
-					</div>
-					<table>
-						<thead>
-							<tr>
-								<th>Plateforme</th>
-								<th>Frais de transaction</th>
-								<th>Montant final</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Etsy</td>
-								<td>
-									<span class="amount" id="etsyFee">0</span>€
-									<br>(6.5% + 4% + 0.30€/vente + 0.47€/article)
-								</td>
-								<td>
-									<span id="etsyRemaining">0</span>€</td>
-							</tr>
-							<tr>
-								<td>WooCommerce</td>
-								<td>
-									<span class="amount" id="woocommerceFee">0</span>€
-									<br>(1.4% + 0.25€/vente)
-								</td>
-								<td>
-									<span id="woocommerceRemaining">0</span>€</td>
-							</tr>
-						</tbody>
-					</table>
+			<div class="footer-top">
+				<h3 class="vt323">Merci de votre visite !</h3>
+			</div>
+			<div class="footer-content">
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/nicolashalberstadt" target="_blank" aria-label="LinkedIn">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+					<a href="mailto:contact@nicolashalberstadt.com?subject=Demande de contact" aria-label="Email">
+						<i class="fas fa-envelope"></i>
+					</a>
 				</div>
+				<p>&copy;
+					{{ "now"|date('Y') }}
+					Nicolas Halberstadt. Tous droits réservés.</p>
 			</div>
 		</div>
-	</div>
-</section>
-
-<section id="realisations" class="w-100">
-	<div class="container">
-		<h2 class="number vt323">
-			<span class="neon-green">02.</span>
-			Réalisations
-		</h2>
-		<div class="projets">
-			<a target="_blank" href="https://mizoatelier.com" class="card mizoboutik">
-				<div class="card-img-top">
-					<img src="{{ asset('uploads/mizoboutik.png') }}" alt="Projet Mizoatelier">
-				</div>
-			</a>
-			<a target="_blank" href="https://mizoatelier.com" class="card mizoboutik">
-				<div class="card-body">
-					<h5 class="card-title">L'atelier Mizo</h5>
-					<p class="card-text">
-						Création d'une boutique en ligne avec WooCommerce : gestion des ventes en Europe, frais de livraison par zone, intégration Apple Pay, Google Pay et PayPal.
-					</p>
-				</div>
-			</a>
-		</div>
-	</div>
-</section>
-
-<section id="a-propos">
-	<div class="container">
-		<h2 class="number vt323">
-			<span class="neon-green">03.</span>
-			A propos de moi</h2>
-		<div class="d-block d-md-flex">
-			<div class="col-12 col-md-6 left-panel light-grey mb-4">
-				Après plusieurs années d’expérience dans le web, je me suis spécialisé dans la conception de sites internet. Mon travail vise à associer performance, ergonomie et esthétisme pour des réalisations qui se distinguent.
-				<br/>
-				<br/>
-				Mon ambition est de donner vie à vos idées en réalisant un site qui vous ressemble. Passionné par les défis, je cherche toujours des solutions innovantes pour répondre aux besoins spécifiques de chaque client.
-				<br/>
-				<a href="#contact">Contactez-moi</a>
-				pour échanger sur votre projet ou en savoir plus sur mes services !
-			</div>
-			<div class="col-12 col-md-6 right-panel">
-				<img src="{{ asset('uploads/me.png')}}" height="300" alt="Mon portrait">
-			</div>
-		</div>
-	</div>
-</section>
-<section id="contact">
-	<div class="container">
-		<h2 class="number vt323">
-			<span class="neon-green">04.</span>
-			Contact
-		</h2>
-		<div class="form-container">
-			{{ form_start(form, { 'attr': { 'id': 'contact-form', 'action': '/contact', 'method': 'POST', 'class': 'needs-validation', 'novalidate': 'novalidate' } }) }}
-			<div class="row">
-				<div class="col-12 col-md-6">
-					{{ form_row(form.firstname) }}
-					<div class="invalid-feedback">test</div>
-				</div>
-				<div class="col-12 col-md-6">
-					{{ form_row(form.lastname) }}
-					<div class="invalid-feedback">test</div>
-				</div>
-			</div>
-			{{ form_row(form.email) }}
-			<p class="m-0">{{ form_label(form.type) }}</p>
-			<div id="contact_type">
-				{% for choice in form.type %}
-					<div class="radio-item">
-						{{ form_widget(choice) }}
-						{{ form_label(choice) }}
-					</div>
-				{% endfor %}
-			</div>
-			<div class="message">
-				{{ form_row(form.message) }}
-				<div id="charCount">
-					<span id="count">0</span>/50</div>
-			</div>
-			{{ form_row(form.submit) }}
-			{{ form_end(form) }}
-			<div id="loading">
-				<p>Envoi en cours</p>
-			</div>
-			<div id="successMessage">
-				<div class="message-container"></div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<footer id="footer" class="w-100">
-	<div class="container">
-		<div class="footer-top">
-			<h3 class="vt323">Merci de votre visite !</h3>
-		</div>
-		<div class="footer-content">
-			<div class="social-links">
-				<a href="https://www.linkedin.com/in/nicolashalberstadt" target="_blank" aria-label="LinkedIn">
-					<i class="fa-brands fa-linkedin"></i>
-				</a>
-				<a href="mailto:contact@nicolashalberstadt.com?subject=Demande de contact" aria-label="Email">
-					<i class="fas fa-envelope"></i>
-				</a>
-			</div>
-			<p>&copy;
-				{{ "now"|date('Y') }}
-				Nicolas Halberstadt. Tous droits réservés.</p>
-		</div>
-	</div>
-</footer>{% endblock %}
+	</footer>
+</div>{% endblock %}
