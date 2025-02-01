@@ -10,12 +10,21 @@
 		<meta property="og:description" content="Développeur freelance à Aix-en-Provence, spécialisé dans la création de sites internet modernes et adaptés à vos besoins.">
 		<meta property="og:image" content="https://nicolashalberstadt.com/public/uploads/meta_img.png">
 		<meta property="og:url" content="{{ app.request.uri }}">
+		<meta property="og:type" content="website">
 		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Nicolas Halberstadt - Création de sites internet Aix-en-Provence">
+		<meta name="twitter:description" content="Développeur freelance à Aix-en-Provence, spécialisé dans la création de sites modernes.">
+		<meta name="twitter:image" content="https://nicolashalberstadt.com/public/uploads/meta_img.png">
+		<meta name="twitter:site" content="@TonTwitter">
+		<link rel="canonical" href="https://nicolashalberstadt.com">
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" as="style">
+		<meta name="robots" content="index, follow">
 		<title>Création site internet Aix-en-Provence | Nicolas Halberstadt</title>
 		{% block stylesheets %}
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 			<link rel="stylesheet" href="{{ asset('styles/app.scss') }}">
+			<link rel="icon" type="image/x-icon" href="favicon.ico">
 
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,16 +39,21 @@
 		{% block javascripts %}{% endblock %}
 		<script type="application/ld+json">
 			{
-				"@context": "https://schema.org",
-				"@type": "Person",
-				"name": "Nicolas Halberstadt",
-				"jobTitle": "Développeur web freelance",
-				"address": {
-						"@type": "PostalAddress",
-						"addressLocality": "Aix-en-Provence",
-						"addressCountry": "France"
-					},
-				"url": "https://nicolashalberstadt."
+			  "@context": "https://schema.org",
+			  "@type": "LocalBusiness",
+			  "name": "Nicolas Halberstadt",
+			  "description": "Développeur web freelance à Aix-en-Provence spécialisé en création de sites internet modernes et optimisés pour le SEO.",
+			  "image": "https://nicolashalberstadt.com/public/uploads/meta_img.png",
+			  "url": "https://nicolashalberstadt.com",
+			  "address": {
+			    "@type": "PostalAddress",
+			    "addressLocality": "Aix-en-Provence",
+			    "addressCountry": "France"
+			  },
+			  "sameAs": [
+			    "https://linkedin.com/in/nicolashalberstadt",
+			    "https://twitter.com/TonTwitter"
+			  ]
 			}
 		</script>
 	</head>
